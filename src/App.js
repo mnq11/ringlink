@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import i18n from 'i18next';
+import {initReactI18next} from 'react-i18next';
+
+import Header from './pages/Header/Header';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Contact from './pages/Contact/Contact';
+import resources from './pages/language/locales';
 import './App.css';
 
+i18n
+    .use(initReactI18next)
+    .init({
+        resources,
+        lng: 'en',
+        keySeparator: false,
+        interpolation: {
+            escapeValue: false
+        }
+    });
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/services" element={<Services/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

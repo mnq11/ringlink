@@ -54,7 +54,7 @@
 }
 
 .about-content {
-    text-align: left;
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -118,4 +118,14 @@
 .contact-form button:hover {
     background-color: #f1faee;
     color: #1d3557;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    textAlign: right;
+/*make centerd */
+
+
 }

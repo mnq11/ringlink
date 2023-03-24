@@ -8,9 +8,11 @@ const Contact = () => {
     return (
         <div>
             <br/>
+            <section className="about-hero-section">
+                <h1 className="about-hero-title">{t('Contact')}</h1>
+            </section>
             <section className="contact-section">
                 <div className="container">
-                    <h2 className="section-title">{t('Contact')}</h2>
                     <div className="contact-content">
                         <form className="contact-form">
                             <input type="text" placeholder={t('Name')}/>

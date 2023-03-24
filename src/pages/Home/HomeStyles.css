@@ -16,37 +16,40 @@
     color: #f1faee;
     font-size: 4rem;
     margin: 0;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-title {
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem 0;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.services-section {
-    background-color: #f1faee;
-    padding: 3rem 0;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.service-card {
-    text-align: center;
-    background-color: #a8dadc;
-    padding: 2rem;
-    border-radius: 5px;
 }
 
 .about-section {
@@ -59,73 +62,36 @@
     margin: 0 auto;
 }
 
-.contact-section {
-    background-color: #457b9d;
-    color: #f1faee;
-    padding: 3rem 0;
-}
-
-.contact-content {
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 /* HomeStyles.css */
 
 /*... other styles ...*/
 
-.contact-section {
-    background-color: #457b9d;
-    color: #f1faee;
-    padding: 3rem 0;
+.animated-background-section {
+    height: 300px;
+    background: linear-gradient(
+            135deg,
+            rgba(29, 53, 87, 1) 25%,
+            rgba(69, 123, 157, 1) 50%,
+            rgba(29, 53, 87, 1) 75%
+    )
+    no-repeat;
+    background-size: 300% 300%;
+    animation: backgroundAnimation 5s ease infinite;
 }
 
-.contact-content {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #f1faee;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact-form textarea {
-    resize: none;
-}
-
-.contact-form button {
-    grid-column: span 2;
-    padding: 1rem;
-    background-color: #1d3557;
-    color: #f1faee;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #f1faee;
-    color: #1d3557;
-}
-
-p {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    position: relative;
-    textAlign: right;
-/*make centerd */
-
-
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

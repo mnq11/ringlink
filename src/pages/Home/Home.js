@@ -1,4 +1,4 @@
-// Home.jsx
+// Home.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './HomeStyles.css';
@@ -12,8 +12,6 @@ const Home = () => {
             <section className="hero-section">
                 <h1 className="hero-title">{t('We_Build_Confidence')}</h1>
             </section>
-
-
 
             <section className="about-section">
                 <div className="container">

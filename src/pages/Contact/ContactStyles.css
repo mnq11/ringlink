@@ -1,5 +1,16 @@
 /* ContactStyles.css */
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,10 +29,14 @@
     color: #f1faee;
     font-size: 4rem;
     margin: 0;
+    animation: fadeIn 1s ease-out;
 }
 
 .contact-section {
     padding: 3rem 0;
+    animation: fadeIn 1s ease-out 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .contact-content {
@@ -58,10 +73,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #f1faee;
     color: #1d3557;
+    transform: translateY(-3px);
 }

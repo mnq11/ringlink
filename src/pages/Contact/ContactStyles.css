@@ -1,0 +1,67 @@
+/* ContactStyles.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-hero-section {
+    background-color: #1d3557;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-title {
+    color: #f1faee;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.contact-section {
+    padding: 3rem 0;
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #f1faee;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    grid-column: span 2;
+    padding: 1rem;
+    background-color: #1d3557;
+    color: #f1faee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f1faee;
+    color: #1d3557;
+}

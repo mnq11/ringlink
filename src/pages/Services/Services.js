@@ -1,7 +1,7 @@
 // Services.js
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import Styling from  './Services.css';
+import './Services.css';
 
 const Services = () => {
     const {t} = useTranslation();

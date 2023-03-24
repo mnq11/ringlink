@@ -141,7 +141,6 @@ nav .active {
         font-size: 0.8rem;
     }
 }
-
 /* Animated styles */
 nav a:before {
     content: '';
@@ -153,7 +152,7 @@ nav a:before {
     height: 2px;
     border-radius: 2px;
     background-color: var(--primary-color);
-    transition: width 0.2s ease, height 0.2s ease, border-radius 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a:hover:before {
@@ -182,6 +181,7 @@ nav .active:before {
     align-items: center;
     padding: 1rem 0;
     background-color: var(--primary-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
@@ -217,43 +217,46 @@ nav .active:before {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .language-switch button:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-.headerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 1rem;
-    background-color: var(--primary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.logoContainer {
-    display: flex;
-    align-items: center;
-}
-
-.logoContainer img {
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.companyName {
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--secondary-color);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    letter-spacing: 2px;
-}
-
+/* Responsive styles */
 @media only screen and (max-width: 768px) {
-    .companyName {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 5px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    /* Language switch */
+    .language-switch {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .language-switch button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
     }
 }

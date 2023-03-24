@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import styles from './module.css';
+import styles from './Header.css';
 import i18n from 'i18next';
 
 const Header = () => {

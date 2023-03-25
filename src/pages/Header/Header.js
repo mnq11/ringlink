@@ -1,17 +1,55 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import {NavLink, useLocation} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import styles from './Header.css';
 import i18n from 'i18next';
+import ReactSelect from 'react-select';
+import Flag from 'react-world-flags';
 
 const Header = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const location = useLocation();
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language).then((r) => console.log(r));
     };
+    const languageOptions = [
 
+        {
+            value: 'ar',
+            label: (
+                <div>
+                    <Flag code="SA" height="18" width="24" className="mr-2"/> العربية
+                </div>
+            ),
+
+        },{
+            value: 'en',
+            label: (
+                <div>
+                    <Flag code="US" height="18" width="24" className="mr-2"/> English
+                </div>
+            ),
+        },
+        {
+            value: 'es',
+            label: (
+                <div>
+                    <Flag code="ES" height="18" width="24" className="mr-2"/> Español
+                </div>
+            ),
+        },
+        {
+            value: 'fr',
+            label: (
+                <div>
+                    <Flag code="FR" height="18" width="24" className="mr-2"/> Français
+                </div>
+            ),
+        },
+
+        // Add more languages here
+    ];
     return (
         <div className={styles.headerContainer}>
 
@@ -33,7 +71,7 @@ const Header = () => {
                                     {t('Home')}
                                 </NavLink>
                             </li>
-                            <br />
+                            <br/>
                             <li>
                                 <NavLink
                                     to="/about"
@@ -46,7 +84,7 @@ const Header = () => {
                                     {t('About')}
                                 </NavLink>
                             </li>
-                            <br />
+                            <br/>
 
                             <li>
                                 <NavLink
@@ -60,7 +98,7 @@ const Header = () => {
                                     {t('Services')}
                                 </NavLink>
                             </li>
-                            <br />
+                            <br/>
                             <li>
                                 <NavLink
                                     to="/contact"
@@ -73,17 +111,19 @@ const Header = () => {
                                     {t('Contact')}
                                 </NavLink>
                             </li>
+                            <div className="language-picker">
+                                <ReactSelect
+                                    value={languageOptions.find((option) => option.value === i18n.language)}
+                                    onChange={(e) => changeLanguage(e.value)}
+                                    options={languageOptions}
+                                    className={styles.languageSelect}
+                                />
+                            </div>
                         </nav>
                     </div>
-                    <br />
+                    <br/>
 
-                    <div className="language-switch">
-                        <button onClick={() => changeLanguage('en')}>EN</button>
-                        <button onClick={() => changeLanguage('fr')}>FR</button>
-                        <button onClick={() => changeLanguage('es')}>ES</button>
-                        <button onClick={() => changeLanguage('ar')}>AR</button>
-                        {/* Add more language buttons as needed */}
-                    </div>
+
                 </header>
             </div>
         </div>

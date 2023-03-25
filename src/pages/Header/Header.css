@@ -83,29 +83,6 @@ nav .active {
     max-width: 1%;
 }
 
-/* Language switch */
-.language-switch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.language-switch button {
-    margin-left: 10px;
-    background-color: var(--accent-color);
-    color: var(--hover-color);
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.language-switch button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
@@ -130,17 +107,9 @@ nav .active {
         padding: 10px;
     }
 
-    /* Language switch */
-    .language-switch {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
 
-    .language-switch button {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-    }
 }
+
 /* Animated styles */
 nav a:before {
     content: '';
@@ -173,58 +142,6 @@ nav .active:before {
     border-radius: 3px;
 }
 
-/* Header */
-.header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    background-color: var(--primary-color);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-}
-
-.header-logo img {
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.header-logo h1 {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-}
-
-/* Language switch */
-.language-switch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.language-switch button {
-    margin-left: 10px;
-    background-color: var(--accent-color);
-    color: var(--hover-color);
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.language-switch button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
@@ -249,14 +166,6 @@ nav .active:before {
         padding: 10px;
     }
 
-    /* Language switch */
-    .language-switch {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
 
-    .language-switch button {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-    }
 }
+

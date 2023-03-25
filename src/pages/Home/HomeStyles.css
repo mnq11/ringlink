@@ -5,11 +5,19 @@
 }
 
 .hero-section {
-    background-color: #1d3557;
+    background-image: url('https://mcdn.wallpapersafari.com/335/23/18/2tJ4sg.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
 }
 
 .hero-title {
@@ -17,6 +25,22 @@
     font-size: 4rem;
     margin: 0;
     animation: fadeInDown 1.5s ease-in-out;
+}
+
+.hero-cta {
+    background-color: #1d3557;
+    color: #f1faee;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    animation: fadeIn 2s;
+    transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+    background-color: #457b9d;
 }
 
 @keyframes fadeInDown {
@@ -67,9 +91,6 @@ p {
     margin-bottom: 1rem;
     text-align: center;
 }
-/* HomeStyles.css */
-
-/*... other styles ...*/
 
 .animated-background-section {
     height: 300px;
@@ -81,17 +102,71 @@ p {
     )
     no-repeat;
     background-size: 300% 300%;
-    animation: backgroundAnimation 5s ease infinite;
+    animation: animatedBackground 3s linear infinite;
 }
 
-@keyframes backgroundAnimation {
+@keyframes animatedBackground {
     0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
+        background-position: 0 0;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: -300% 0;
     }
 }
+
+/* HomeStyles.css */
+/* ... previous styles ... */
+
+.team-section {
+    padding: 3rem 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+}
+
+.cta-section {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+.cta-button {
+    background-color: #457b9d;
+    color: #f1faee;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a8dadc;
+}
+
+

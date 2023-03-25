@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {NavLink, useLocation} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import styles from './Header.css';
@@ -10,11 +10,11 @@ const Header = () => {
     const {t} = useTranslation();
     const location = useLocation();
 
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language).then((r) => console.log(r));
+    const changeLanguage = (selectedOption) => {
+        i18n.changeLanguage(selectedOption.value).then((r) => console.log(r));
     };
-    const languageOptions = [
 
+    const languageOptions = [
         {
             value: 'ar',
             label: (
@@ -22,8 +22,8 @@ const Header = () => {
                     <Flag code="SA" height="18" width="24" className="mr-2"/> العربية
                 </div>
             ),
-
-        },{
+        },
+        {
             value: 'en',
             label: (
                 <div>
@@ -47,86 +47,55 @@ const Header = () => {
                 </div>
             ),
         },
-
         // Add more languages here
     ];
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
     return (
-        <div className={styles.headerContainer}>
+        <header className="navbar">
+            <a href="#" className="logo">
+                YourLogo
+            </a>
+            <nav className={`nav ${showMenu ? 'show' : ''}`}>
+                <NavLink to="/" className="nav-link" activeClassName={styles.active}>
+                    {t('Home')}
+                </NavLink>
+                <NavLink
+                    to="/services"
+                    className="nav-link"
+                    activeClassName={styles.active}
+                >
+                    {t('Services')}
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    className="nav-link"
+                    activeClassName={styles.active}
+                >
+                    {t('About')}
+                </NavLink>
+                <NavLink
+                    to="/contact"
+                    className="nav-link"
+                    activeClassName={styles.active}
+                >
+                    {t('Contact')}
+                </NavLink>
+            </nav>
 
-            {/* Navigation */}
-            <div className={styles.navContainer}>
-                <header className={`${styles.header} ${styles.wrapper}`}>
-                    <div className="wrapper">
-                        <nav className={styles.navbar}>
-                            <li>
-                                <NavLink
-                                    to="/"
-                                    exact
-                                    className={
-                                        location.pathname === '/'
-                                            ? `${styles.navLink} ${styles.active}`
-                                            : styles.navLink
-                                    }
-                                >
-                                    {t('Home')}
-                                </NavLink>
-                            </li>
-                            <br/>
-                            <li>
-                                <NavLink
-                                    to="/about"
-                                    className={
-                                        location.pathname === '/about'
-                                            ? `${styles.navLink} ${styles.active}`
-                                            : styles.navLink
-                                    }
-                                >
-                                    {t('About')}
-                                </NavLink>
-                            </li>
-                            <br/>
-
-                            <li>
-                                <NavLink
-                                    to="/services"
-                                    className={
-                                        location.pathname === '/services'
-                                            ? `${styles.navLink} ${styles.active}`
-                                            : styles.navLink
-                                    }
-                                >
-                                    {t('Services')}
-                                </NavLink>
-                            </li>
-                            <br/>
-                            <li>
-                                <NavLink
-                                    to="/contact"
-                                    className={
-                                        location.pathname === '/contact'
-                                            ? `${styles.navLink} ${styles.active}`
-                                            : styles.navLink
-                                    }
-                                >
-                                    {t('Contact')}
-                                </NavLink>
-                            </li>
-                            <div className="language-picker">
-                                <ReactSelect
-                                    value={languageOptions.find((option) => option.value === i18n.language)}
-                                    onChange={(e) => changeLanguage(e.value)}
-                                    options={languageOptions}
-                                    className={styles.languageSelect}
-                                />
-                            </div>
-                        </nav>
-                    </div>
-                    <br/>
-
-
-                </header>
-            </div>
-        </div>
+            <ReactSelect
+                className="language-selector"
+                options={languageOptions}
+                defaultValue={languageOptions.find((option) => option.value === 'en')}
+                onChange={changeLanguage}
+                isSearchable={false}
+            />
+        </header>
     );
 };
 

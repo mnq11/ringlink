@@ -9,6 +9,9 @@ const resources = {
             Contact: 'Contact Us',
             welcome: 'Welcome',
             We_Build_Confidence: 'We Build Confidence & We Deliver Impact',
+            Our_Team: 'Our Team',
+            Learn_More: 'Learn More',
+
             // Services
             Public_Relations: 'Public Relations',
             Public_Relations_Description: 'An efficient PR development policy can not only provide crucial third-party endorsements for your product or service, but it can work as a powerful tool to influence behaviour and change opinion.',
@@ -62,6 +65,8 @@ const resources = {
             Contact: 'Contacta con nosotros',
             welcome: 'Bienvenido',
             We_Build_Confidence: 'Construimos confianza y entregamos impacto',
+            Our_Team: 'Nuestro equipo',
+            Learn_More: 'Aprende más',
 
             Public_Relations: 'Relaciones públicas',
             Public_Relations_Description: 'Una política de desarrollo de relaciones públicas eficiente no solo puede proporcionar importantes aprobaciones de terceros para su producto o servicio, sino que puede funcionar como una poderosa herramienta para influir en el comportamiento y cambiar la opinión.',
@@ -113,6 +118,8 @@ const resources = {
             Contact: 'Contactez nous',
             welcome: 'Bienvenue',
             We_Build_Confidence: 'Nous construisons la confiance et nous livrons un impact',
+            Our_Team : 'Notre équipe',
+            Learn_More: 'Apprendre encore plus',
 
             // services
             Public_Relations: 'Relations publiques',
@@ -167,6 +174,8 @@ const resources = {
             Contact: 'اتصل بنا',
             welcome: 'أهلا بك',
             We_Build_Confidence: 'نبني الثقة ونقدم تأثير',
+            Our_Team: 'فريقنا',
+            Learn_More: 'تعلم المزيد',
 
             // services
             Public_Relations: 'علاقات عامة',

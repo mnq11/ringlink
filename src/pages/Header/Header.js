@@ -8,8 +8,7 @@ import Flag from 'react-world-flags';
 
 const Header = () => {
     const {t} = useTranslation();
-    const location = useLocation();
-
+    useLocation();
     const changeLanguage = (selectedOption) => {
         i18n.changeLanguage(selectedOption.value).then((r) => console.log(r));
     };
@@ -50,14 +49,10 @@ const Header = () => {
         // Add more languages here
     ];
 
-    const [showMenu, setShowMenu] = useState(false);
-
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
-    };
-
+    const [showMenu] = useState(false);
     return (
         <header className="navbar">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#" className="logo">
                 YourLogo
             </a>

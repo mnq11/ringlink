@@ -36,6 +36,7 @@ const Home = () => {
     return (
         <div className="home-container">
             <section className="hero-section">
+
                 <div className="hero-content">
                     <h1 className="hero-title">{t('We_Build_Confidence')}</h1>
                     <button className="hero-cta">{t('Learn_More')}</button>

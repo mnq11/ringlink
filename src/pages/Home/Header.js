@@ -82,18 +82,7 @@ const Header = ({ theme, setTheme }) => {
                     {t('Contact')}
                 </NavLink>
             </nav>
-            <div className={`theme-toggle ${theme}`}>
-                <input
-                    type="checkbox"
-                    id="theme-toggle"
-                    className={`theme-toggle-checkbox${theme}`}
-                    onChange={toggleTheme}
-                />
-                <label htmlFor={`theme-toggle${theme}`} className={`heme-toggle-label${theme}`}>
-                    <span className={`theme-toggle-label-text ${theme}`}>Dark Mode</span>
-                    <span className={`theme-toggle-label-switch ${theme}`}></span>
-                </label>
-            </div>
+
 
             <ReactSelect
                 className="language-selector"

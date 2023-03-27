@@ -11,6 +11,17 @@ const resources = {
             We_Build_Confidence: 'We Build Confidence & We Deliver Impact',
             Our_Team: 'Our Team',
             Learn_More: 'Learn More',
+            Our_Story: 'Our Story',
+            CEO : 'CEO',
+            Researcher : 'Researcher',
+            Doctor : 'Doctor',
+            Developer : 'Developer',
+            Exporter : 'Exporter',
+            Marketing_Manager : 'Marketing Manager',
+            Executive_Assistant : 'Executive Assistant',
+            Executive_Manager : 'Executive Manager',
+
+
 
             // Services
             Public_Relations: 'Public Relations',
@@ -67,6 +78,15 @@ const resources = {
             We_Build_Confidence: 'Construimos confianza y entregamos impacto',
             Our_Team: 'Nuestro equipo',
             Learn_More: 'Aprende más',
+            Our_Story: 'Nuestra historia',
+            CEO : 'CEO',
+            Researcher : 'Investigador',
+            Doctor : 'Doctor',
+            Developer : 'Desarrollador',
+            Exporter : 'Exportador',
+            Marketing_Manager : 'Gerente de marketing',
+            Executive_Assistant : 'Asistente ejecutivo',
+            Executive_Manager : 'Gerente ejecutivo',
 
             Public_Relations: 'Relaciones públicas',
             Public_Relations_Description: 'Una política de desarrollo de relaciones públicas eficiente no solo puede proporcionar importantes aprobaciones de terceros para su producto o servicio, sino que puede funcionar como una poderosa herramienta para influir en el comportamiento y cambiar la opinión.',
@@ -120,7 +140,15 @@ const resources = {
             We_Build_Confidence: 'Nous construisons la confiance et nous livrons un impact',
             Our_Team : 'Notre équipe',
             Learn_More: 'Apprendre encore plus',
-
+            Our_Story: 'Notre histoire',
+            CEO: 'PDG',
+            Researcher: 'Chercheur',
+            Doctor: 'Docteur',
+            Developer: 'Développeur',
+            Exporter: 'Exportateur',
+            Marketing_Manager: 'Directeur marketing',
+            Executive_Assistant: 'Assistant exécutif',
+            Executive_Manager: 'Directeur exécutif',
             // services
             Public_Relations: 'Relations publiques',
             Public_Relations_Description: 'Une politique de développement des relations publiques efficace ne peut non seulement fournir des appuis tiers cruciaux pour votre produit ou service, mais elle peut également fonctionner comme un puissant outil pour influencer le comportement et changer d\'avis.',
@@ -176,7 +204,15 @@ const resources = {
             We_Build_Confidence: 'نبني الثقة ونقدم تأثير',
             Our_Team: 'فريقنا',
             Learn_More: 'تعلم المزيد',
-
+            Our_Story : 'قصتنا',
+            CEO: 'الرئيس التنفيذي',
+            Researcher: 'محقق',
+            Doctor: 'طبيب',
+            Developer: 'مطور',
+            Exporter: 'مصدر',
+            Marketing_Manager: 'مدير التسويق',
+            Executive_Assistant: 'مساعد تنفيذي',
+            Executive_Manager: 'مدير تنفيذي',
             // services
             Public_Relations: 'علاقات عامة',
             Public_Relations_Description: 'سياسة تطوير العلاقات العامة الفعالة لا تقدم فقط موافقات هامة لمنتجك أو خدمتك من طرف طرف ثالث، ولكنها يمكن أن تعمل كأداة قوية لتؤثر على السلوك وتغير الرأي.',

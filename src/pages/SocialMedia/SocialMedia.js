@@ -9,21 +9,20 @@ library.add(fab);
 const SocialMedia = () => {
     return (
         <div className="social-media">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=100091332034987" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={['fab', 'facebook']} />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={['fab', 'twitter']} />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/halketwassl/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={['fab', 'instagram']} />
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={['fab', 'linkedin']} />
-            </a>
-            <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+
+            <a href="https://wa.me/46762702580" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={['fab', 'whatsapp']} />
             </a>
+
         </div>
     );
 };

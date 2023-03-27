@@ -1,23 +1,22 @@
 // About.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './AboutStyles.css';
+import '../../pages/Home/HomeStyles.css';
 
 const About = () => {
     const { t } = useTranslation();
 
     return (
         <div className="about-container">
-            <br/>
-            <section className="about-hero-section">
-                <h1 className="about-hero-title">{t('About Us')}</h1>
-            </section>
+
+
+
 
             <section className="about-content-section">
                 <div className="container">
-                    <h2 className="section-title">{t('Our Story')}</h2>
+                    <h2 className="Contact-hero-title">{t('Our_Story')}</h2>
                     <div className="about-content">
-                        <p>{t('Description about the company')}</p>
+                        <p>{t('Description_about_the_company')}</p>
                     </div>
                 </div>
             </section>

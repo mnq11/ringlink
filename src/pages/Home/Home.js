@@ -15,7 +15,7 @@ const Home = ({ theme }) => {
         },
         {
             name: t('Alkadami Halketwassl'),
-            role: t('Researcher'),
+            role: t('Executive_Assistant'),
             image: process.env.PUBLIC_URL + '/Team/Halketwassl.jpeg',
         },        {
             name: t('Amin Alsofiani'),
@@ -30,17 +30,17 @@ const Home = ({ theme }) => {
 
         {
             name: t('Abdulrhman Farhan'),
-            role: t('Exporeter'),
+            role: t('Exporter'),
             image: process.env.PUBLIC_URL + '/Team/Farhan.jpg',
         },
 
         {
             name: t('Akram Alnajjar'),
-            role: t('Marketing Manager'),
+            role: t('Marketing_Manager'),
             image: 'https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/125443351_3399872616764046_2009647877559854198_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=DAkB8LwlVI8AX8edH4V&_nc_ht=scontent-cph2-1.xx&oh=00_AfDaiBpl2PZGW89eofOktuhXUn0N8LnY7TV3u4j6T4aC1A&oe=6445F513',
         }, {
             name: t('Fuaad Alhadari'),
-            role: t('Executive Manager'),
+            role: t('Executive_Manager'),
             image: 'https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/337034188_747268340329196_39984735804986146_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=JihxMgEvht8AX8OLmyL&_nc_ht=scontent-cph2-1.xx&oh=00_AfD2BHjzm5GOzEhCghtmkjUx8Rnayia_mg8crg8gzo-Xhg&oe=6423CB3F',
         },
     ];
@@ -53,14 +53,7 @@ const Home = ({ theme }) => {
                 </div>
             </section>
 
-            <section className={`about-section ${theme}`}>
-                <div className="container">
-                    <h2 className="section-title">{t('About')}</h2>
-                    <div className="about-content">
-                        <p>{t('Description_about_the_company')}</p>
-                    </div>
-                </div>
-            </section>
+
 
             <section className="services-section">
                 <div className="container">

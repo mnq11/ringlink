@@ -16,7 +16,7 @@
 }
 
 .Contact-hero-section {
-    background-color: #1d3557;
+    background-image: url(" /src/assets/imgs/header-light.jpg");
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 .Contact-hero-title {
-    color: #f1faee;
+    color: #353b32;
     font-size: 4rem;
     margin: 0;
     animation: fadeIn 1s ease-out;

@@ -66,7 +66,7 @@ const Header = ({ theme, setTheme }) => {
     return (
         <header className={`navbar ${theme}`}>
             <a href="/" className="logo">
-                YourLogo
+                {t('halketwassl')}
             </a>
             <nav className={`nav ${showMenu ? 'show' : ''}`}>
                 <NavLink to="/" className="nav-link" >

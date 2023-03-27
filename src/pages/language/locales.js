@@ -3,6 +3,8 @@ const resources = {
     en: {
         translation: {
             // Common
+            halketwassl: 'Halket Wassl',
+
             Home: 'Home',
             About: 'About',
             Services: 'Services',
@@ -70,6 +72,7 @@ const resources = {
     es: {
         translation: {
             // Common
+            halketwassl: 'Halket Wassl',
             Home: 'Casa',
             About: 'Acerca de',
             Services: 'Servicios',
@@ -131,6 +134,7 @@ const resources = {
     },
     fr: {
         translation: {
+            halketwassl: 'Halket Wassl',
             // common
             Home: 'Accueil',
             About: 'À propos',
@@ -196,6 +200,7 @@ const resources = {
     ar: {
         translation: {
             // common
+            halketwassl: ' حلقة وصل ',
             Home: 'الصفحة الرئيسية',
             About: 'حول',
             Services: 'خدماتنا',

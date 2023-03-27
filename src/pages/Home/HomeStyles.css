@@ -345,6 +345,8 @@ p {
 }
 
 .contact-content {
+    color: #353b32;
+
     text-align: center;
     max-width: 800px;
     margin: 0 auto;

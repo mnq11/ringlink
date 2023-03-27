@@ -10,6 +10,7 @@
 }
 
 .container {
+    color: #353b32;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -31,6 +32,7 @@
 }
 
 .contact-section {
+    color: #353b32;
     padding: 3rem 0;
     animation: fadeIn 1s ease-out 0.5s;
     opacity: 0;
@@ -38,6 +40,7 @@
 }
 
 .contact-content {
+    color: #353b32;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;

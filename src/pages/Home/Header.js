@@ -5,15 +5,7 @@ import '../../pages/Home/HomeStyles.css';
 import i18n from 'i18next';
 import ReactSelect from 'react-select';
 import Flag from 'react-world-flags';
-function setThemeToBody(newTheme) {
-    if (newTheme === 'dark') {
-        document.body.classList.add('dark');
-    } else {
-        document.body.classList.remove('dark');
-    }
-}
-
-const Header = ({ theme, setTheme }) => {
+const Header = ({ theme}) => {
     const { t } = useTranslation();
     useLocation();
     const changeLanguage = (selectedOption) => {
@@ -57,12 +49,6 @@ const Header = ({ theme, setTheme }) => {
     ];
 
     const [showMenu] = useState(false);
-    const toggleTheme = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
-        setThemeToBody(newTheme);
-    };
     return (
         <header className={`navbar ${theme}`}>
             <a href="/" className="logo">

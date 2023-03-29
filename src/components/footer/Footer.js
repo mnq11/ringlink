@@ -4,7 +4,6 @@ import "./Footer.css";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaFax,
   FaEnvelope,
   FaGlobe,
 } from "react-icons/fa";
@@ -47,19 +46,20 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <div className="footer-contact u-text-small">
             <p>
-              <FaMapMarkerAlt /> &nbsp; Address: United States.
+              <FaMapMarkerAlt /> &nbsp; Address: Brobyvägen 3 B lgh 1103
+              28971 Sibbhult
             </p>
             <p>
-              <FaPhoneAlt /> &nbsp; Phone: +1230 123 1231.
+              <FaPhoneAlt /> &nbsp; Phone: +46 76 270 25 80
+            </p>
+            {/*<p>*/}
+            {/*  <FaFax /> &nbsp; Fax: +12342762178*/}
+            {/*</p>*/}
+            <p>
+              <FaEnvelope /> &nbsp; Email: info@Hlkatwsl.com
             </p>
             <p>
-              <FaFax /> &nbsp; Fax: +12342762178
-            </p>
-            <p>
-              <FaEnvelope /> &nbsp; Email: info@socialx.com
-            </p>
-            <p>
-              <FaGlobe /> &nbsp; Website: www.socialx.com
+              <FaGlobe /> &nbsp; Website: www.Hlkatwsl.com
             </p>
           </div>
         </div>

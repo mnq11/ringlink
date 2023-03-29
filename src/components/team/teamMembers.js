@@ -5,7 +5,7 @@ export const teamMembers = [
         id: 1,
         name: "Nabil",
         role: "Public_Relations_Manager",
-        imageUrl: "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/328823660_6528791660536150_7851627034796407651_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=g_-cepzGJlIAX8RbbS7&_nc_ht=scontent-cph2-1.xx&oh=00_AfD0M19S4q_FxIYLNIg6y_esw8RuBuzpqUau8fZ8kraeAg&oe=6422E949",
+        imageUrl: process.env.PUBLIC_URL + '/Team/Nabil.jpeg'
     },
     {
         id: 2,

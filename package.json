@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "aos": "^3.0.0-beta.6",
+    "express": "^4.18.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-flags-select": "^2.2.3",
@@ -18,8 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "eject": "react-scripts eject",
+    "start:prod": "node server.js"
+  }
+,
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,5 +44,4 @@
   "engines": {
     "node": "16.x"
   }
-
 }

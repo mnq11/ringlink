@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import "./Question.css";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-const Question = ({ title, answer }) => {
-  const [showAnswer, setShowAnswer] = useState(false);
+const Question = React.memo(({ title, answer }) => {
+    const [showAnswer, setShowAnswer] = useState(false);
 
-  const handleClick = () => {
-    setShowAnswer(!showAnswer);
-  };
-
+    const handleClick = () => {
+        setShowAnswer(!showAnswer);
+    };
   return (
     <div className="container question">
       <div className="question-title">
@@ -26,6 +25,6 @@ const Question = ({ title, answer }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Question;

@@ -17,7 +17,7 @@
     "cross-env": "^7.0.3"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--max-old-space-size=2048 react-scripts start",
+    "start": "cross-env NODE_OPTIONS=--max-old-space-size=8192 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

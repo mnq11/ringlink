@@ -16,7 +16,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "NODE_OPTIONS='--max-old-space-size=4096' react-scripts start",
+    "start": "cross-env NODE_OPTIONS=--max-old-space-size=4096 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -24,8 +24,7 @@
     "heroku-postbuild": "npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  }
-,
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,5 +45,8 @@
   },
   "engines": {
     "node": "16.x"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

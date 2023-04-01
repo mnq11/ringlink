@@ -15,24 +15,13 @@ export const teamMembers = [
     },
     {
         id: 3,
-        name: "Farhan",
-        role: "Exporter",
-        imageUrl: process.env.PUBLIC_URL + '/Team/Farhan.jpg',
-    },
-    {
-        id: 4,
         name: "Mohammed",
         role: "Developer",
         imageUrl: "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/33395483_1954068504612951_1345252326260080640_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HkrAfK2FxuIAX9aiv2Q&_nc_ht=scontent-cph2-1.xx&oh=00_AfDpqdBd2akHCcZ4Q8ReOW_Jf2PGwXN8kd58tAHROUDmgg&oe=6445F54E",
     },
+
     {
-        id: 6,
-        name: "Fuaad",
-        role: "Public_Relations_Internee",
-        imageUrl: "https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/337034188_747268340329196_39984735804986146_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=yYjUgz6ORiwAX8LVu85&_nc_ht=scontent-cph2-1.xx&oh=00_AfAegys0QNRaUgRMs649gj1OZI1tohk0Lf7mutIZRGMb7A&oe=6427BFBF",
-    },
-    {
-        id: 7,
+        id: 4,
         name: "Haidar",
         role: "Lawyer",
         imageUrl: "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/122411990_105819407986229_1248691245041350719_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wum2LtAbcsYAX9Wrw_5&_nc_ht=scontent-cph2-1.xx&oh=00_AfBnJA3H53sauCjIkQKu8yWfG5-H7aMBoncnKxMbCIpCSg&oe=644AF9C4",

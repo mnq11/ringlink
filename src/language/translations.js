@@ -1,63 +1,6 @@
 // src/translations.js
 
 export const translations = {
-    EN: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
-        Home: "Home",
-        Services: "Services",
-        Team: "Team",
-        Contact: "Contact",
-        Learn_More: "Learn More",
-        Header_Title_1: " Comprehensive Public Relations Services",
-        Header_Title_2: "Travel Services",
-        Header_Title_3: " Expanding Your Reach",
-        Header_Paragraph: " Diverse range of public relations services, including media relations, government relations, content creation, and public affairs. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
-        Core_serverss: "Core Services",
-        Core_Paragraph: "We offer a wide range of services to help you achieve your goals. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
-        Meet_members: "Meet our talented and dedicated team members.",
-        FAQs: "FAQs",
-        FAQs_Paragraph: "Answers to some of the most frequently asked questions about our services.",
-
-        // Contact
-        contact_now: "Contact Us Now",
-
-        // teamNames
-        Nabil: "Nabil",
-        Sarah: "Sarah",
-        Farhan: "Farhan",
-        Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
-        Haidar: "Haidar",
-
-        //Roles
-        Public_Relations_Manager : "Public Relations Manager",
-        Events_Coordinator : "Events Coordinator",
-        Exporter : "Exporter",
-        Developer : "Developer",
-        Communications_Specialist : "Communications Specialist",
-        Public_Relations_Internee : "Public Relations Internee",
-        Lawyer : "Lawyer",
-
-
-        // Services
-        Feature1_Heading: "Travel and tourism services",
-        Feature1_Text: "Travel and tourism services are services that are provided to people who are traveling or are on vacation. These services include transportation, accommodation, and entertainment.",
-        Feature2_Heading: "Public Affairs",
-        Feature2_Text: "Managing the flow of information between an individual or an organization and the public.",
-
-
-        Feature3_Heading: "Government Relations",
-        Feature3_Text: "Managing how a company, organization, or individual interacts with government officials and agencies.",
-
-        Feature4_Heading: "Public Relations",
-        Feature4_Text: "Managing the flow of information between an individual or an organization and the public.",
-
-
-        Feature5_Heading: "Media Relations",
-        Feature5_Text: "Managing the flow of information between an individual or an organization and the media.",
-    },
 
     AR: {
         Hlkt: "حلقة",
@@ -116,6 +59,63 @@ export const translations = {
         Feature5_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والإعلام",
 
 
+    },
+    EN: {
+        Hlkt: "Hlkt",
+        Wsl: "Wsl",
+        Home: "Home",
+        Services: "Services",
+        Team: "Team",
+        Contact: "Contact",
+        Learn_More: "Learn More",
+        Header_Title_1: " Comprehensive Public Relations Services",
+        Header_Title_2: "Travel Services",
+        Header_Title_3: " Expanding Your Reach",
+        Header_Paragraph: " Diverse range of public relations services, including media relations, government relations, content creation, and public affairs. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
+        Core_serverss: "Core Services",
+        Core_Paragraph: "We offer a wide range of services to help you achieve your goals. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
+        Meet_members: "Meet our talented and dedicated team members.",
+        FAQs: "FAQs",
+        FAQs_Paragraph: "Answers to some of the most frequently asked questions about our services.",
+
+        // Contact
+        contact_now: "Contact Us Now",
+
+        // teamNames
+        Nabil: "Nabil",
+        Sarah: "Sarah",
+        Farhan: "Farhan",
+        Mohammed: "Mohammed",
+        Akram: "Akram",
+        Fuaad: "Fuaad",
+        Haidar: "Haidar",
+
+        //Roles
+        Public_Relations_Manager : "Public Relations Manager",
+        Events_Coordinator : "Events Coordinator",
+        Exporter : "Exporter",
+        Developer : "Developer",
+        Communications_Specialist : "Communications Specialist",
+        Public_Relations_Internee : "Public Relations Internee",
+        Lawyer : "Lawyer",
+
+
+        // Services
+        Feature1_Heading: "Travel and tourism services",
+        Feature1_Text: "Travel and tourism services are services that are provided to people who are traveling or are on vacation. These services include transportation, accommodation, and entertainment.",
+        Feature2_Heading: "Public Affairs",
+        Feature2_Text: "Managing the flow of information between an individual or an organization and the public.",
+
+
+        Feature3_Heading: "Government Relations",
+        Feature3_Text: "Managing how a company, organization, or individual interacts with government officials and agencies.",
+
+        Feature4_Heading: "Public Relations",
+        Feature4_Text: "Managing the flow of information between an individual or an organization and the public.",
+
+
+        Feature5_Heading: "Media Relations",
+        Feature5_Text: "Managing the flow of information between an individual or an organization and the media.",
     },
     FR: {
         Hlkt: "Hlkt",

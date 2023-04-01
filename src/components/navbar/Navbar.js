@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, createContext} from "react";
 import {AiOutlineBars} from "react-icons/ai";
 import {RiCloseLine} from "react-icons/ri";
 import {SiAnaconda} from "react-icons/si";
@@ -10,17 +10,18 @@ import {translations} from "../../language/translations";
 import ReactFlagsSelect from "react-flags-select";
 
 const Navbar = () => {
+
+
     const [showMenu, setShowMenu] = useState(false);
     const {selectedLanguage, setSelectedLanguage} = useContext(LanguageContext);
 
     const languageCodes = {
+        AR: "SA",
         EN: "GB",
-        AR: "YE",
         SE : "SE",
         SO: "SO",
         TR: "TR",
         IR: "IR",
-        FR: "FR",
     };
 
     const handleLanguageChange = (countryCode) => {

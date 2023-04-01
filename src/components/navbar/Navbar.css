@@ -12,11 +12,13 @@
 }
 
 .logo-text {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 300;
   color: white;
 }
-
+.logo-text.language-arabic {
+  font-size: 30px; /* Adjusted font size for Arabic */
+}
 .logo-text span {
   font-weight: 600;
   color: orangered;

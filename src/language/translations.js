@@ -16,7 +16,7 @@ export const translations = {
         Header_Paragraph: "نطاق متنوع من الخدمات العامة للعلاقات، بما في ذلك العلاقات الإعلامية والعلاقات الحكومية وإنشاء المحتوى والشؤون العامة. فريقنا من الخبراء ملتزم بمساعدتك على تطوير عملك وإنشاء سمعة إيجابية من خلال تطوير استراتيجيات العلاقات العامة المؤثرة المخصصة لأهدافك واحتياجاتك الفريدة.",
         Core_serverss: "الخدمات الأساسية",
         Core_Paragraph: "نحن نقدم مجموعة واسعة من الخدمات لمساعدتك على تحقيق أهدافك. فريقنا من الخبراء ملتزم بمساعدتك على تطوير عملك وإنشاء سمعة إيجابية من خلال تطوير استراتيجيات العلاقات العامة المؤثرة المخصصة لأهدافك واحتياجاتك الفريدة.",
-        Meet_members: "تعرف على أعضاء فريقنا الموهوبين والملتزمين.",
+        Meet_members: "تعرف على أعضاء فريقنا",
         FAQs: "أسئلة وأجوبة",
         FAQs_Paragraph: "الإجابات على بعض أسئلة الأكثر شيوعًا حول خدماتنا.",
 
@@ -27,10 +27,8 @@ export const translations = {
         // teamNames
         Nabil: "نبيل",
         Sarah: "سارة",
-        Farhan: "فرحان",
         Mohammed: "محمد",
         Akram: "أكرم",
-        Fuaad: "فؤاد",
         Haidar: "حيدر",
 
 
@@ -116,65 +114,6 @@ export const translations = {
 
         Feature5_Heading: "Media Relations",
         Feature5_Text: "Managing the flow of information between an individual or an organization and the media.",
-    },
-    FR: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
-        Home: "Accueil",
-        Services: "Services",
-        Team: "une équipe",
-        Contact: "Contacter",
-        Learn_More: "En savoir plus",
-        Header_Title_1: "Services complets de relations publiques",
-        Header_Title_2: "Travel Services",
-        Header_Title_3: "Services de voyage",
-        Header_Paragraph: "Nous offrons une gamme variée de services de relations publiques, y compris les relations avec les médias, les relations gouvernementales, la création de contenu et les affaires publiques. Notre équipe d'experts se consacre à vous aider à développer votre entreprise et à établir une réputation positive en développant des stratégies de relations publiques efficaces adaptées à vos objectifs et besoins uniques.",
-        Core_serverss: "Les services de base",
-        Core_Paragraph: "Nous offrons une large gamme de services pour vous aider à atteindre vos objectifs. Notre équipe d'experts se consacre à vous aider à développer votre entreprise et à établir une réputation positive en développant des stratégies de relations publiques efficaces adaptées à vos objectifs et besoins uniques.",
-        Meet_members: "Rencontrez les membres de notre équipe talentueuse et dévouée.",
-        FAQs: "FAQs",
-        FAQs_Paragraph: "Réponses à certaines des questions les plus fréquemment posées sur nos services.",
-
-
-        // Contact
-        contact_now: "Contactez-nous maintenant",
-
-
-        // teamNames
-        Nabil: "Nabil",
-        Sarah: "Sarah",
-        Farhan: "Farhan",
-        Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
-        Haidar: "Haidar",
-
-
-        //Roles
-        Public_Relations_Manager : "Directeur des relations publiques",
-        Events_Coordinator : "Coordinateur des événements",
-        Exporter : "Exportateur",
-        Developer : "Développeur",
-        Communications_Specialist : "Spécialiste des communications",
-        Public_Relations_Internee : "Stagiaire en relations publiques",
-        Lawyer : "Avocat",
-
-
-
-        //     // Services
-
-        Feature1_Heading: "Services de voyage",
-        Feature1_Text:
-            "Les services de voyage sont les services offerts aux personnes qui voyagent ou passent des vacances. Ces services comprennent le transport, l'hébergement et les loisirs.",
-        Feature2_Heading: "Affaires publiques",
-        Feature2_Text: "Gestion du flux d'informations entre une personne ou une organisation et le public.",
-        Feature3_Heading: "Relations gouvernementales",
-        Feature3_Text: "Gestion de la façon dont une entreprise, une organisation ou une personne interagissent avec les autorités et les agences gouvernementales.",
-        Feature4_Heading: "Relations publiques",
-        Feature4_Text: "Gestion du flux d'informations entre une personne ou une organisation et le public.",
-        Feature5_Heading: "Relations avec les médias",
-        Feature5_Text: "Gestion du flux d'informations entre une personne ou une organisation et les médias.",
-
 
     }, SE: {
         Hlkt: "Hlkt",

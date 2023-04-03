@@ -27,10 +27,7 @@ const Header = () => {
           <p className="u-text-small">
             {translations[selectedLanguage].Header_Paragraph}
           </p>
-          {/*<div className="header-cta">*/}
-          {/*  <Button text={"Get Started"} btnClass={"btn-dark"} href={"#"} />*/}
-          {/*  <Button text={"How It Works"} btnClass={"btn-light"} href={"#"} />*/}
-          {/*</div>*/}
+
         </div>
         <div className="header-right" data-aos="fade-left">
           <img src={phoneHeader} alt="phone" />

@@ -3,7 +3,7 @@ import "./App.css";
 import {
     Navbar,
     Header,
-    Serverss,
+    Services,
     Team,
     Contact,
     Faq,
@@ -17,7 +17,7 @@ function App() {
                 <Navbar />
                 <Header />
             </header>
-            <Serverss data-aos="fade-up" />
+            <Services data-aos="fade-up" />
             <Team />
             <Contact />
             <Faq />

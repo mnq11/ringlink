@@ -1,3 +1,4 @@
+// src/App.js
 import "./App.css";
 import {
     Navbar,

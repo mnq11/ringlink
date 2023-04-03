@@ -1,4 +1,4 @@
-// src/LanguageContext.js
+// src/language/LanguageContext.js
 
 import { createContext, useState } from "react";
 

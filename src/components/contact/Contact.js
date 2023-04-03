@@ -13,7 +13,7 @@ function handleWhatsAppClick() {
 }
 
 function handleTelegramClick() {
-    window.location.href = "https://t.me/halketwassl";}
+    window.location.href = "https://t.me/+46762702580";}
 
 function handleFacebookClick() {
     window.location.href = "https://www.facebook.com/profile.php?id=100091332034987";

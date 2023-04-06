@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import {
-  FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
@@ -44,10 +43,7 @@ const Footer = () => {
         <div className="footer-box">
           <h4>Contact Us</h4>
           <div className="footer-contact u-text-small">
-            <p>
-              <FaMapMarkerAlt /> &nbsp; Address: Brobyvägen 3 B lgh 1103
-              28971 Sibbhult
-            </p>
+
             <p>
               <FaPhoneAlt /> &nbsp; Phone: +46 76 270 25 80
             </p>

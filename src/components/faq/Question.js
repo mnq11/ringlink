@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, {useContext, useState} from "react";
 import "./Question.css";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import {translations} from "../../language/translations";
+import {LanguageContext} from "../../language/LanguageContext";
 
 const Question = React.memo(({ title, answer }) => {
     const [showAnswer, setShowAnswer] = useState(false);
+    const { selectedLanguage} = useContext(LanguageContext);
 
     const handleClick = () => {
         setShowAnswer(!showAnswer);
@@ -31,7 +34,13 @@ const Question = React.memo(({ title, answer }) => {
                     <div className="answer-container">
                         <p className="u-text-small">{answer}</p>
                         <div className="social-icon" onClick={handleWhatsAppClick}>
-                            <FaWhatsapp />
+                            <div className="icon-container">
+                                <FaWhatsapp />
+                            </div>
+                            <div className="icon-text">
+                                <span className="icon-text">{translations[selectedLanguage].Talke_to_Use}</span>
+
+                            </div>
                         </div>
                     </div>
                 )}
@@ -39,5 +48,4 @@ const Question = React.memo(({ title, answer }) => {
         </div>
     );
 });
-
 export default Question;

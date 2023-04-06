@@ -19,7 +19,7 @@ export const translations = {
         Meet_members: "تعرف على أعضاء فريقنا",
         FAQs: "أسئلة وأجوبة",
         FAQs_Paragraph: "الإجابات على بعض أسئلة الأكثر شيوعًا حول خدماتنا.",
-
+        Talke_to_Use: "تحدث معنا",
 
         // Contact
         contact_now: "اتصل بنا الآن",
@@ -75,7 +75,7 @@ export const translations = {
         Meet_members: "Meet our talented and dedicated team members.",
         FAQs: "FAQs",
         FAQs_Paragraph: "Answers to some of the most frequently asked questions about our services.",
-
+        Talke_to_Use: "Talk to us",
         // Contact
         contact_now: "Contact Us Now",
 
@@ -132,7 +132,7 @@ export const translations = {
         Meet_members: "Träffa våra talangfulla och engagerade teammedlemmar.",
         FAQs: "FAQs",
         FAQs_Paragraph: "Svar på några av de vanligaste frågorna om våra tjänster.",
-
+        Talke_to_Use: "Prata med oss",
         // Contact
         contact_now: "Kontakta oss nu",
 
@@ -189,7 +189,7 @@ export const translations = {
         Meet_members: "Kulanka xubnaha kooxdeena heerka koowaad iyo kuwa daacad ah.",
         FAQs: "FAQs",
         FAQs_Paragraph: "Jawaabaha su'aalaha badanaa la is weydiiyo ee ku saabsan adeegyadeena.",
-
+        Talke_to_Use : "Ku xiriir",
         // Contact
         contact_now: "Nala soo xiriir hadda",
 
@@ -201,7 +201,6 @@ export const translations = {
         Akram: "Akram",
         Fuaad: "Fuaad",
         Haidar: "Haidar",
-
 
         //Roles
         Public_Relations_Manager : "Mudaneeyaha Xiriirka Dadweynaha",
@@ -245,7 +244,7 @@ export const translations = {
         Meet_members: "با متخصصان و متمرکزان ما آشنا شوید.",
         FAQs: "سوالات متداول",
         FAQs_Paragraph: "پاسخ به برخی از سوالات متداول درباره خدمات ما.",
-
+        Talke_to_Use : "با ما تماس بگیرید",
         // Contact
         contact_now: "همین حالا تماس بگیرید",
 
@@ -303,7 +302,7 @@ export const translations = {
         Meet_members: "Yetenekli ve özverili ekip üyelerimizle tanışın.",
         FAQs: "SSS",
         FAQs_Paragraph: "Hizmetlerimiz hakkında en sık sorulan soruların bazılarına yanıtlar.",
-
+        Talke_to_Use :'Bize Ulaşın',
         // Contact
         contact_now: "Şimdi İletişime Geçin",
 

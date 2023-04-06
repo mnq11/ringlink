@@ -8,9 +8,10 @@ import "aos/dist/aos.css";
 import {LanguageContext} from "../../language/LanguageContext";
 import {translations} from "../../language/translations";
 
-function handleWhatsAppClick() {
-    window.location.href = "https://wa.me/46762702580";
-}
+const handleWhatsAppClick = () => {
+    window.location.href = "https://api.whatsapp.com/send?phone=46762702580";
+};
+
 
 function handleTelegramClick() {
     window.location.href = "https://t.me/+46762702580";}

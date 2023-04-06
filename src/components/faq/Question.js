@@ -14,8 +14,9 @@ const Question = React.memo(({ title, answer }) => {
     };
 
     const handleWhatsAppClick = () => {
-        window.location.href = "https://wa.me/46762702580";
+        window.location.href = "https://api.whatsapp.com/send?phone=46762702580";
     };
+
 
     return (
         <div className="container question">

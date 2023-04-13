@@ -1,4 +1,4 @@
-import {FaGg, FaHotel, FaStreetView, FaSuitcaseRolling} from "react-icons/fa";
+import {FaGg, FaHotel, FaStreetView, FaSuitcaseRolling,FaBriefcase} from "react-icons/fa";
 import {MdConnectWithoutContact} from "react-icons/md";
 
 export const FeatureList = [
@@ -32,5 +32,10 @@ export const FeatureList = [
         headingKey: "Feature5_Heading",
         textKey: "Feature5_Text",
     },
-
+    {
+        id: 6,
+        icon: <FaBriefcase color="#0a1930" size={22} />,
+        headingKey: "Feature6_Heading",
+        textKey: "Feature6_Text",
+    },
 ];

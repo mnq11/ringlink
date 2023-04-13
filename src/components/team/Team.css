@@ -19,6 +19,8 @@
   margin: 1.5rem 0;
   position: relative;
   padding-bottom: 1rem;
+  text-align: center;
+
 }
 
 .team h2::after {

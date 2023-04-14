@@ -65,7 +65,6 @@ section#footer {
 }
 
 .footer-social a {
-  display: inline-block;
   margin: 0 1rem;
   border-radius: 50%;
   width: 3rem;

@@ -1,8 +1,13 @@
+.contact {
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  padding: 2rem;
+}
+
 section#contact {
   text-align: center;
   color: #fff;
   background-size: cover;
-  background: url(../../assets/437971.jpg) fixed;
+  background-color: #0a1930;
 }
 
 .contact h2 {
@@ -41,33 +46,69 @@ form button {
   font-weight: 500;
 }
 
+
+
 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .social-icon {
   margin: 2rem;
   padding: 1rem;
-  width: 4rem;
-  height: 4rem;
   border: 1px solid #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  opacity: 0;
+  animation: fade-in 1s forwards;
 }
-
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .social-icon:hover {
   background: var(--light-blue);
+  transform: rotate(10deg);
+  transition: transform 0.3s;
 }
 
 @media screen and (max-width: 600px) {
   form input {
     width: 60%;
   }
+}
+form input,
+form button {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #777;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+form button {
+  margin-left: -1px;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--form-button);
+  border-color: var(--form-button);
+  font-weight: 500;
+  box-shadow: 0 0 0 4px var(--form-button);
+  transition: box-shadow 0.3s;
 }

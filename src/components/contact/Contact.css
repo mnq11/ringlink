@@ -1,5 +1,4 @@
 .contact {
-  /*background-color: rgba(0, 0, 0, 0.5);*/
   padding: 2rem;
 }
 
@@ -46,8 +45,6 @@ form button {
   font-weight: 500;
 }
 
-
-
 .social-icons {
   display: flex;
   justify-content: center;
@@ -72,6 +69,7 @@ form button {
   opacity: 0;
   animation: fade-in 1s forwards;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -80,6 +78,7 @@ form button {
     opacity: 1;
   }
 }
+
 .social-icon:hover {
   background: var(--light-blue);
   transform: rotate(10deg);
@@ -88,27 +87,21 @@ form button {
 
 @media screen and (max-width: 600px) {
   form input {
-    width: 60%;
+    width: 100%;
   }
-}
-form input,
-form button {
-  padding: 1rem;
-  background: transparent;
-  border: 1px solid #777;
-  border-radius: 5px;
-  color: #fff;
-  outline: none;
-  width: 80%;
-  font-size: 1.6rem;
-}
 
-form button {
-  margin-left: -1px;
-  border-radius: 0 5px 5px 0;
-  background-color: var(--form-button);
-  border-color: var(--form-button);
-  font-weight: 500;
-  box-shadow: 0 0 0 4px var(--form-button);
-  transition: box-shadow 0.3s;
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
 }

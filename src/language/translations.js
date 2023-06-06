@@ -11,7 +11,6 @@ export const translations = {
         Contact: "اتصل",
         Learn_More: "تعلم المزيد",
         Header_Title_1: "خدمات العلاقات العامة الشاملة",
-        Header_Title_2: "خدمات السفر",
         Header_Title_3: "وسع نطاقك",
         Header_Paragraph: "نطاق متنوع من الخدمات العامة للعلاقات، بما في ذلك العلاقات الإعلامية والعلاقات الحكومية وإنشاء المحتوى والشؤون العامة. فريقنا من الخبراء ملتزم بمساعدتك على تطوير عملك وإنشاء سمعة إيجابية من خلال تطوير استراتيجيات العلاقات العامة المؤثرة المخصصة لأهدافك واحتياجاتك الفريدة.",
         Core_serverss: "الخدمات الأساسية",
@@ -30,17 +29,17 @@ export const translations = {
         Mohammed: "محمد",
         Akram: "أكرم",
         Haidar: "حيدر",
-
+        Hamed: "حامد",
 
         //Roles
-        Public_Relations_Manager : "مدير العلاقات العامة",
-        Events_Coordinator : "منسق الأحداث",
-        Exporter : "مصدر",
-        Developer : "مطور",
-        Communications_Specialist : "خبير الاتصالات",
-        Public_Relations_Internee : "متدرب علاقات عامة",
-        Lawyer : "محامي",
-
+        Public_Relations_Manager: "مدير العلاقات العامة",
+        Events_Coordinator: "منسق الأحداث",
+        Exporter: "مصدر",
+        Developer: "مطور",
+        Communications_Specialist: "خبير الاتصالات",
+        Public_Relations_Internee: "متدرب علاقات عامة",
+        Lawyer: "محامي",
+        Local_Representative_in_turkey: "ممثل محلي في تركيا",
 
 
         //     // Services
@@ -55,7 +54,8 @@ export const translations = {
         Feature4_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والجمهور",
         Feature5_Heading: "العلاقات الإعلامية",
         Feature5_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والإعلام",
-
+        Feature6_Heading: "تنسيق العلاقات التجارية والاستثمارية",
+        Feature6_Text: "إدارة كيفية التفاعل بين شركة أو مؤسسة أو شخص مع التجار و الشركات وانشاء روابط تجارية ",
 
     },
     EN: {
@@ -67,7 +67,6 @@ export const translations = {
         Contact: "Contact",
         Learn_More: "Learn More",
         Header_Title_1: " Comprehensive Public Relations Services",
-        Header_Title_2: "Travel Services",
         Header_Title_3: " Expanding Your Reach",
         Header_Paragraph: " Diverse range of public relations services, including media relations, government relations, content creation, and public affairs. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
         Core_serverss: "Core Services",
@@ -87,16 +86,16 @@ export const translations = {
         Akram: "Akram",
         Fuaad: "Fuaad",
         Haidar: "Haidar",
-
+        Hamed: "Hamed",
         //Roles
-        Public_Relations_Manager : "Public Relations Manager",
-        Events_Coordinator : "Events Coordinator",
-        Exporter : "Exporter",
-        Developer : "Developer",
-        Communications_Specialist : "Communications Specialist",
-        Public_Relations_Internee : "Public Relations Internee",
-        Lawyer : "Lawyer",
-
+        Public_Relations_Manager: "Public Relations Manager",
+        Events_Coordinator: "Events Coordinator",
+        Exporter: "Exporter",
+        Developer: "Developer",
+        Communications_Specialist: "Communications Specialist",
+        Public_Relations_Internee: "Public Relations Internee",
+        Lawyer: "Lawyer",
+        Local_Representative_in_turkey: "Local Representative in Turkey",
 
         // Services
         Feature1_Heading: "Travel and tourism services",
@@ -115,6 +114,9 @@ export const translations = {
         Feature5_Heading: "Media Relations",
         Feature5_Text: "Managing the flow of information between an individual or an organization and the media.",
 
+        Feature6_Heading: "Business and Investment Relations Coordination",
+        Feature6_Text: "Managing how a company, organization, or individual interacts with traders and companies and establishing business links.",
+
     }, SE: {
         Hlkt: "Hlkt",
         Wsl: "Wsl",
@@ -124,7 +126,6 @@ export const translations = {
         Contact: "Kontakt",
         Learn_More: "Lär dig mer",
         Header_Title_1: "Omfattande tjänster för offentliga relationer",
-        Header_Title_2: "Reseservice",
         Header_Title_3: "Utöka din räckvidd",
         Header_Paragraph: "Vi erbjuder en mångsidig rad tjänster inom offentliga relationer, inklusive medierelationer, myndighetsrelationer, innehållsskapande och offentliga angelägenheter. Vårt team av experter är dedikerade till att hjälpa dig att växa din verksamhet och etablera ett positivt rykte genom att utveckla effektiva PR-strategier anpassade till dina unika mål och behov.",
         Core_serverss: "Kärntjänster",
@@ -144,17 +145,17 @@ export const translations = {
         Akram: "Akram",
         Fuaad: "Fuaad",
         Haidar: "Haidar",
-
+        Hamed: "Hamed",
 
         //Roles
-        Public_Relations_Manager : "PR-chef",
-        Events_Coordinator : "Arrangemangsansvarig",
-        Exporter : "Exportör",
-        Developer : "Utvecklare",
-        Communications_Specialist : "Kommunikationschef",
-        Public_Relations_Internee : "PR-praktikant",
-        Lawyer : "Advokat",
-
+        Public_Relations_Manager: "PR-chef",
+        Events_Coordinator: "Arrangemangsansvarig",
+        Exporter: "Exportör",
+        Developer: "Utvecklare",
+        Communications_Specialist: "Kommunikationschef",
+        Public_Relations_Internee: "PR-praktikant",
+        Lawyer: "Advokat",
+        Local_Representative_in_turkey: "Lokal representant i Turkiet",
 
         //     // Services
 
@@ -170,6 +171,9 @@ export const translations = {
         Feature5_Heading: "Medierelationer",
         Feature5_Text: "Hantering av informationsflödet mellan en person eller organisation och media.",
 
+        Feature6_Heading: "Affärs- och investeringsrelationer",
+        Feature6_Text: "Hantering av hur ett företag, en organisation eller en person interagerar med handlare och företag och etablerar affärsrelationer.",
+
     },
 
     SO: {
@@ -181,7 +185,6 @@ export const translations = {
         Contact: "Xiriir",
         Learn_More: "Baro Wixii Faahfaahin Ah",
         Header_Title_1: "Adeegyada Xiriirka Dadweynaha ee Guud",
-        Header_Title_2: "Adeegyada Safarka",
         Header_Title_3: "Kordhinta Hal-abuurkaaga",
         Header_Paragraph: "Waxaan bixinaa noocyo kala duwan oo adeegyo xiriirka dadweynaha ah, oo ay ku jiraan xiriirka warbaahinta, xiriirka dowladaha, abuurista muuqaalka, iyo arrimaha bulshada. Kooxdayada xirfadlayaal ayaa u dhabarka u ah inay ku caawiso kor u qaadida ganacsigaaga iyo sameynta sumcad wanaagsan iyada oo loo adeegsanayo hababka PR ee ku habboon ujeedadahaaga gaarka ah iyo baahiyahaaga.",
         Core_serverss: "Adeegyada Asaasiga ah",
@@ -189,7 +192,7 @@ export const translations = {
         Meet_members: "Kulanka xubnaha kooxdeena heerka koowaad iyo kuwa daacad ah.",
         FAQs: "FAQs",
         FAQs_Paragraph: "Jawaabaha su'aalaha badanaa la is weydiiyo ee ku saabsan adeegyadeena.",
-        Talke_to_Use : "Ku xiriir",
+        Talke_to_Use: "Ku xiriir",
         // Contact
         contact_now: "Nala soo xiriir hadda",
 
@@ -201,16 +204,16 @@ export const translations = {
         Akram: "Akram",
         Fuaad: "Fuaad",
         Haidar: "Haidar",
-
+        Hamed: "Hamed",
         //Roles
-        Public_Relations_Manager : "Mudaneeyaha Xiriirka Dadweynaha",
-        Events_Coordinator : "Xiriiriyaha Dhacdooyinka",
-        Exporter : "dhoofiye",
-        Developer:"Horumariye",
-        Communications_Specialist : "Khabiirka Isgaadhsiinta",
-        Public_Relations_Internee : "Xiriirka Dadweynaha Intern",
-        Lawyer:"Garyaqaan",
-
+        Public_Relations_Manager: "Mudaneeyaha Xiriirka Dadweynaha",
+        Events_Coordinator: "Xiriiriyaha Dhacdooyinka",
+        Exporter: "dhoofiye",
+        Developer: "Horumariye",
+        Communications_Specialist: "Khabiirka Isgaadhsiinta",
+        Public_Relations_Internee: "Xiriirka Dadweynaha Intern",
+        Lawyer: "Garyaqaan",
+        Local_Representative_in_turkey: "Xiriirka Dadweynaha ee Dalka ee Turkiyada",
         //     // Services
 
         Feature1_Heading: "Adeegyada socdaalka iyo dalxiiska",
@@ -223,7 +226,8 @@ export const translations = {
         Feature4_Text: "Xiriirka dadweynaha waxaad ka heli kartaa inay ku jiraan ugu dambeeyay, ugu dambeeyay, iyo dhaqanka.",
         Feature5_Heading: "Xiriirka Dadweynaha",
         Feature5_Text: "Maaraynta socodka xogta ee u dhaxaysa shakhsi ama urur iyo dadweynaha",
-
+        Feature6_Heading: "Xiriirka Dowladda",
+        Feature6_Text: "Maaraynta sida shirkad, urur, ama shakhsi ula falgalaan saraakiisha dawladda iyo wakaaladaha",
 
     },
 
@@ -236,7 +240,6 @@ export const translations = {
         Contact: "تماس",
         Learn_More: "بیشتر بدانید",
         Header_Title_1: "خدمات عمومی روابط گسترده",
-        Header_Title_2: "سرویس سفر",
         Header_Title_3: "گسترش دامنه خود را",
         Header_Paragraph: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
         Core_serverss: "خدمات هسته ای",
@@ -244,7 +247,7 @@ export const translations = {
         Meet_members: "با متخصصان و متمرکزان ما آشنا شوید.",
         FAQs: "سوالات متداول",
         FAQs_Paragraph: "پاسخ به برخی از سوالات متداول درباره خدمات ما.",
-        Talke_to_Use : "با ما تماس بگیرید",
+        Talke_to_Use: "با ما تماس بگیرید",
         // Contact
         contact_now: "همین حالا تماس بگیرید",
 
@@ -256,31 +259,32 @@ export const translations = {
         Akram: "اکرم",
         Fuaad: "فؤاد",
         Haidar: "حیدر",
-
+        Hamed: "حامد",
 
         //Roles
-        Public_Relations_Manager : "مدیر روابط عمومی",
-        Events_Coordinator : "تنظیم کننده رویدادها",
-        Exporter : "صادر کننده",
-        Developer:"توسعه دهنده",
-        Communications_Specialist : "کارشناس ارتباطات",
-        Public_Relations_Internee : "روابط عمومی داوطلب",
-        Lawyer:"قانونگر",
-
+        Public_Relations_Manager: "مدیر روابط عمومی",
+        Events_Coordinator: "تنظیم کننده رویدادها",
+        Exporter: "صادر کننده",
+        Developer: "توسعه دهنده",
+        Communications_Specialist: "کارشناس ارتباطات",
+        Public_Relations_Internee: "روابط عمومی داوطلب",
+        Lawyer: "قانونگر",
+        Local_Representative_in_turkey: "نماینده محلی در ترکیه",
 
         //     // Services
 
-        Feature1_Heading: "سرویس سفر",
-        Feature1_Text:
-            "سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید. سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید.",
-        Feature2_Heading: "سرویس سفر",
-        Feature2_Text: "سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید.",
-        Feature3_Heading: "سرویس سفر",
-        Feature3_Text: "سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید.",
-        Feature4_Heading: "سرویس سفر",
-        Feature4_Text: "سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید.",
-        Feature5_Heading: "سرویس سفر",
-        Feature5_Text: "سرویس سفر به شما امکان می دهد تا سفرهای خود را برای کسب و کار خود برنامه ریزی کنید.",
+        Feature1_Heading: "سفر",
+        Feature1_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
+        Feature2_Heading: "محتوا",
+        Feature2_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
+        Feature3_Heading: "روابط عمومی",
+        Feature3_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
+        Feature4_Heading: "مسائل عمومی",
+        Feature4_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
+        Feature5_Heading: "روابط سازمانی",
+        Feature5_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
+        Feature6_Heading: "روابط رسانه ای",
+        Feature6_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
 
 
     },
@@ -294,7 +298,6 @@ export const translations = {
         Contact: "İletişim",
         Learn_More: "Daha Fazla Bilgi",
         Header_Title_1: "Kapsamlı Halkla İlişkiler Hizmetleri",
-        Header_Title_2: "Seyahat Hizmetleri",
         Header_Title_3: "Kapsamanızı Genişletin",
         Header_Paragraph: "Medya ilişkileri, hükümet ilişkileri, içerik oluşturma ve kamu işleri dahil olmak üzere çeşitli halkla ilişkiler hizmetleri sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
         Core_serverss: "Temel Hizmetler",
@@ -302,7 +305,7 @@ export const translations = {
         Meet_members: "Yetenekli ve özverili ekip üyelerimizle tanışın.",
         FAQs: "SSS",
         FAQs_Paragraph: "Hizmetlerimiz hakkında en sık sorulan soruların bazılarına yanıtlar.",
-        Talke_to_Use :'Bize Ulaşın',
+        Talke_to_Use: 'Bize Ulaşın',
         // Contact
         contact_now: "Şimdi İletişime Geçin",
 
@@ -314,31 +317,38 @@ export const translations = {
         Akram: "Akram",
         Fuaad: "Fuaad",
         Haidar: "Haidar",
-
+        Hamed: "Hamed",
         //Roles
-        Public_Relations_Manager : "Halkla İlişkiler Müdürü",
-        Events_Coordinator:'Etkinlik Koordinatörü',
-        Exporter : "İhracatçı",
-        Developer:"Geliştirici",
-        Communications_Specialist : "İletişim Uzmanı",
-        Public_Relations_Internee : "Halkla İlişkiler Stajyeri",
-        Lawyer:"Avukat",
-
-
+        Public_Relations_Manager: "Halkla İlişkiler Müdürü",
+        Events_Coordinator: 'Etkinlik Koordinatörü',
+        Exporter: "İhracatçı",
+        Developer: "Geliştirici",
+        Communications_Specialist: "İletişim Uzmanı",
+        Public_Relations_Internee: "Halkla İlişkiler Stajyeri",
+        Lawyer: "Avukat",
+        Local_Representative_in_turkey: "Türkiye'de yerel temsilci",
 
 
         //     // Services
 
-        Feature1_Heading: "Seyahat Hizmeti",
-        Feature1_Text:
-            "Seyahat hizmeti, işiniz için seyahatlerinizi planlamanıza olanak tanır. Seyahat hizmeti, işiniz için seyahatlerinizi planlamanıza olanak tanır.",
-        Feature2_Heading: "Seyahat Hizmeti",
-        Feature2_Text: "Seyahat hizmeti, işiniz için seyahatlerinizi planlamanıza olanak tanır.",
-        Feature3_Heading: "Seyahat Hizmeti",
-        Feature3_Text: "Seyahat hizmeti, işiniz için seyahatlerinizi planlamanıza olanak tanır.",
-        Feature4_Heading: "Seyahat Hizmeti",
-        Feature4_Text: "Seyahat hizmeti, işiniz için seyahatlerinizi planlamanıza olanak tanır.",
-        Feature5_Heading: "Seyahat Hizmeti",
+        //     // Feature1
+        Feature1_Heading: "Medya İlişkileri",
+        Feature1_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
+        //     // Feature2
+        Feature2_Heading: "Hükümet İlişkileri",
+        Feature2_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
+        //     // Feature3
+        Feature3_Heading: "İçerik Oluşturma",
+        Feature3_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
+        //     // Feature4
+        Feature4_Heading: "Kamu İşleri",
+        Feature4_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
+        //     // Feature5
+        Feature5_Heading: "Seyahat Hizmetleri",
+        Feature5_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
+        //     // Feature6
+        Feature6_Heading: "Sosyal Medya Yönetimi",
+        Feature6_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
 
     }
 

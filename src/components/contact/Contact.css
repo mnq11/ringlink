@@ -1,8 +1,12 @@
+.contact {
+  padding: 2rem;
+}
+
 section#contact {
   text-align: center;
   color: #fff;
   background-size: cover;
-  background: url(../../assets/437971.jpg) fixed;
+  background-color: #0a1930;
 }
 
 .contact h2 {
@@ -45,29 +49,59 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .social-icon {
   margin: 2rem;
   padding: 1rem;
-  width: 4rem;
-  height: 4rem;
   border: 1px solid #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
   cursor: pointer;
   transition: all 0.3s;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .social-icon:hover {
   background: var(--light-blue);
+  transform: rotate(10deg);
+  transition: transform 0.3s;
 }
 
 @media screen and (max-width: 600px) {
   form input {
-    width: 60%;
+    width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
   }
 }

@@ -1,5 +1,6 @@
 // src/teamMembers.js
 
+
 export const teamMembers = [
     {
         id: 1,
@@ -25,5 +26,12 @@ export const teamMembers = [
         name: "Haidar",
         role: "Lawyer",
         imageUrl: process.env.PUBLIC_URL + '/Team/Haidar.jpg',
-    }
+    },
+    {
+        id: 5,
+        name: "Hamed",
+        role: "Local_Representative_in_turkey",
+        imageUrl: process.env.PUBLIC_URL + '/Team/Hamed.jpg',
+    },
+
 ];

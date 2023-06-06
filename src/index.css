@@ -44,6 +44,7 @@ section {
   font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 300;
+
 }
 
 .u-text-dark {
@@ -79,4 +80,5 @@ section {
   min-width: 40rem;
   margin: 0 auto;
   color: var(--dark-text);
+    font-size: 1.5rem;
 }

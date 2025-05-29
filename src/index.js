@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { LanguageProvider } from "./language/LanguageContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const servicesData = [
     // Your services data here
@@ -11,9 +12,11 @@ const servicesData = [
 
 ReactDOM.render(
     <React.StrictMode>
-        <LanguageProvider>
-            <App servicesData={servicesData} /> {/* Added servicesData prop */}
-        </LanguageProvider>
+        <ThemeProvider>
+            <LanguageProvider>
+                <App servicesData={servicesData} />
+            </LanguageProvider>
+        </ThemeProvider>
     </React.StrictMode>,
     document.getElementById("root")
 );

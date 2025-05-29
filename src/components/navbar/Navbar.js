@@ -2,92 +2,218 @@
 import React, {useState, useContext} from "react";
 import {AiOutlineBars} from "react-icons/ai";
 import {RiCloseLine} from "react-icons/ri";
-import {SiAnaconda} from "react-icons/si";
+import {HiSun, HiMoon} from "react-icons/hi";
+import {MdLanguage} from "react-icons/md";
 import Button from "../UI/Button/Button";
 import "../UI/Button/Button.css";
 import "./Navbar.css";
 import {LanguageContext} from "../../language/LanguageContext";
+import {useTheme} from "../../context/ThemeContext";
 import {translations} from "../../language/translations";
 import ReactFlagsSelect from "react-flags-select";
 
 const Navbar = () => {
-
-
     const [showMenu, setShowMenu] = useState(false);
-    const {selectedLanguage, setSelectedLanguage} = useContext(LanguageContext);
-
-    const languageCodes = {
-        AR: "SA",
-        EN: "GB",
-        SE : "SE",
-        SO: "SO",
-        TR: "TR",
-        IR: "IR",
-    };
+    const [showLanguageMenu, setShowLanguageMenu] = useState(false);
+    const {selectedLanguage, setSelectedLanguage, languageConfig} = useContext(LanguageContext);
+    const {toggleTheme, isDark} = useTheme();
 
     const handleLanguageChange = (countryCode) => {
-        const languageCode = Object.keys(languageCodes).find(
-            (key) => languageCodes[key] === countryCode
+        const languageCode = Object.keys(languageConfig).find(
+            (key) => languageConfig[key].flag === countryCode
         );
-        setSelectedLanguage(languageCode);
+        if (languageCode) {
+            setSelectedLanguage(languageCode);
+            setShowLanguageMenu(false);
+        }
     };
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
 
+    const toggleLanguageMenu = () => {
+        setShowLanguageMenu(!showLanguageMenu);
+    };
+
     return (
-        <nav className="navbar container">
-            <div className="logo">
-                <SiAnaconda color="#fff" size={33}/>
-                <p className="logo-text">
-                    {translations[selectedLanguage].Hlkt}<span> {translations[selectedLanguage].Wsl}</span>
-                </p>
-            </div>
-            {/* Add the language selector here */}
-            <div className="language-selector">
-                <ReactFlagsSelect
-                    countries={Object.values(languageCodes)}
-                    customLabels={languageCodes}
-                    selectedSize={20}
-                    optionsSize={14}
-                    onSelect={handleLanguageChange}
-                    defaultCountry={languageCodes[selectedLanguage]}
-                    selected={languageCodes[selectedLanguage]}
-                />
+        <nav className="navbar">
+            <div className="navbar-container">
+                {/* Logo Section */}
+                <div className="navbar-brand">
+                    <div className="logo-container">
+                        <img 
+                            src="/clean logo.jpeg" 
+                            alt="Hyper Scale Insights Logo" 
+                            className="logo-clean"
+                        />
+                        <div className="logo-text">
+                            <span className="brand-name">Hyper Scale</span>
+                            <span className="brand-suffix text-gradient">Insights</span>
+                        </div>
+                    </div>
+                </div>
 
-            </div>
-            <menu>
-                <ul
-                    className="nav-links"
-                    id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
-                >
-                    <li>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a href="#">{translations[selectedLanguage].Home}</a>
-                    </li>
-                    <li>
-                        <a href={"#serverss"}>{translations[selectedLanguage].Services}</a>
-                    </li>
-                    <li>
-                        <a href={"#team"}>{translations[selectedLanguage].Team}</a>
-                    </li>
-                    <li>
-                        <a href={"#contact"}>{translations[selectedLanguage].Contact}</a>
-                    </li>
+                {/* Navigation Links */}
+                <div className="navbar-center">
+                    <ul className="nav-links">
+                        <li>
+                            <a href="#home" className="nav-link">
+                                {translations[selectedLanguage]?.Home || "Home"}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#serverss" className="nav-link">
+                                {translations[selectedLanguage]?.Services || "Services"}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#team" className="nav-link">
+                                {translations[selectedLanguage]?.Team || "Team"}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" className="nav-link">
+                                {translations[selectedLanguage]?.Contact || "Contact"}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li className="nav-btn">
-                        <Button text={translations[selectedLanguage].Learn_More} btnClass={"btn-dark"} href={"#faq"}/>
+                {/* Controls Section */}
+                <div className="navbar-end">
+                    {/* Theme Toggle */}
+                    <button 
+                        className="theme-toggle"
+                        onClick={toggleTheme}
+                        aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
+                    >
+                        {isDark ? <HiSun size={20} /> : <HiMoon size={20} />}
+                    </button>
+
+                    {/* Language Selector */}
+                    <div className="language-selector">
+                        <button 
+                            className="language-toggle"
+                            onClick={toggleLanguageMenu}
+                            aria-label="Select language"
+                        >
+                            <MdLanguage size={20} />
+                            <span className="language-code">{selectedLanguage}</span>
+                        </button>
+                        
+                        {showLanguageMenu && (
+                            <div className="language-dropdown">
+                                <ReactFlagsSelect
+                                    countries={Object.values(languageConfig).map(lang => lang.flag)}
+                                    customLabels={Object.fromEntries(
+                                        Object.entries(languageConfig).map(([code, config]) => [config.flag, config.name])
+                                    )}
+                                    selectedSize={16}
+                                    optionsSize={14}
+                                    onSelect={handleLanguageChange}
+                                    selected={languageConfig[selectedLanguage]?.flag}
+                                    placeholder="Select Language"
+                                />
+                            </div>
+                        )}
+                    </div>
+
+                    {/* CTA Button */}
+                    <Button 
+                        text={translations[selectedLanguage]?.Learn_More || "Learn More"} 
+                        btnClass="btn-primary" 
+                        href="#faq"
+                    />
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <div className="mobile-menu-toggle" onClick={toggleMenu}>
+                    {showMenu ? (
+                        <RiCloseLine size={28} />
+                    ) : (
+                        <AiOutlineBars size={28} />
+                    )}
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className={`mobile-menu ${showMenu ? 'mobile-menu-open' : ''}`}>
+                <div className="mobile-menu-header">
+                    <img 
+                        src="/full logo2.jpeg" 
+                        alt="Hyper Scale Insights Full Logo" 
+                        className="mobile-logo"
+                        onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'block';
+                        }}
+                    />
+                    <div className="mobile-logo-fallback" style={{ display: 'none' }}>
+                        <span className="mobile-brand-name">Hyper Scale Insights</span>
+                    </div>
+                </div>
+
+                <ul className="mobile-nav-links">
+                    <li>
+                        <a href="#home" className="mobile-nav-link" onClick={toggleMenu}>
+                            {translations[selectedLanguage]?.Home || "Home"}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#serverss" className="mobile-nav-link" onClick={toggleMenu}>
+                            {translations[selectedLanguage]?.Services || "Services"}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#team" className="mobile-nav-link" onClick={toggleMenu}>
+                            {translations[selectedLanguage]?.Team || "Team"}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="mobile-nav-link" onClick={toggleMenu}>
+                            {translations[selectedLanguage]?.Contact || "Contact"}
+                        </a>
                     </li>
                 </ul>
-            </menu>
-            <div className="menu-icons" onClick={toggleMenu}>
-                {showMenu ? (
-                    <RiCloseLine color="#fff" size={30}/>
-                ) : (
-                    <AiOutlineBars color="#fff" size={27}/>
-                )}
+
+                <div className="mobile-menu-footer">
+                    <div className="mobile-controls">
+                        <button 
+                            className="mobile-theme-toggle"
+                            onClick={toggleTheme}
+                            aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
+                        >
+                            {isDark ? <HiSun size={20} /> : <HiMoon size={20} />}
+                            <span>{isDark ? 'Light Mode' : 'Dark Mode'}</span>
+                        </button>
+
+                        <div className="mobile-language-selector">
+                            <ReactFlagsSelect
+                                countries={Object.values(languageConfig).map(lang => lang.flag)}
+                                customLabels={Object.fromEntries(
+                                    Object.entries(languageConfig).map(([code, config]) => [config.flag, config.name])
+                                )}
+                                selectedSize={16}
+                                optionsSize={14}
+                                onSelect={handleLanguageChange}
+                                selected={languageConfig[selectedLanguage]?.flag}
+                                placeholder="Select Language"
+                            />
+                        </div>
+                    </div>
+
+                    <Button 
+                        text={translations[selectedLanguage]?.Learn_More || "Learn More"} 
+                        btnClass="btn-primary btn-lg" 
+                        href="#faq"
+                    />
+                </div>
             </div>
+
+            {/* Overlay for mobile menu */}
+            {showMenu && <div className="mobile-menu-overlay" onClick={toggleMenu}></div>}
+            {showLanguageMenu && <div className="language-menu-overlay" onClick={() => setShowLanguageMenu(false)}></div>}
         </nav>
     );
 };

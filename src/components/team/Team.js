@@ -1,8 +1,6 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext } from "react";
 import "./Team.css";
 import "aos/dist/aos.css";
-import { HiStar } from "react-icons/hi";
-import { BsQuote } from "react-icons/bs";
 import { LanguageContext } from "../../language/LanguageContext";
 import { translations } from "../../language/translations";
 import { teamMembers } from "./teamMembers";
@@ -11,34 +9,6 @@ import TeamMember from "./TeamMember";
 const Team = () => {
   const { selectedLanguage } = useContext(LanguageContext);
   
-  // Customer testimonials for digital services and business consultancy
-  const testimonials = useMemo(() => [
-    {
-      id: 1,
-      name: translations[selectedLanguage]?.Sarah_Johnson || "Sarah Johnson",
-      role: translations[selectedLanguage]?.Sarah_Role || "CEO, TechFlow Solutions",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
-      rating: 5,
-      text: translations[selectedLanguage]?.Sarah_Text || "Hyper Scale Insights transformed our business operations completely. Their strategic consulting and digital transformation services increased our efficiency by 200% and helped us scale rapidly.",
-    },
-    {
-      id: 2,
-      name: translations[selectedLanguage]?.Michael_Chen || "Michael Chen",
-      role: translations[selectedLanguage]?.Michael_Role || "Founder, CloudHost Pro",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-      rating: 5,
-      text: translations[selectedLanguage]?.Michael_Text || "The business intelligence solutions they implemented gave us insights we never had before. Our decision-making is now data-driven and our ROI has increased by 300%.",
-    },
-    {
-      id: 3,
-      name: translations[selectedLanguage]?.Emily_Rodriguez || "Emily Rodriguez",
-      role: translations[selectedLanguage]?.Emily_Role || "Operations Manager, WebCraft",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-      rating: 5,
-      text: translations[selectedLanguage]?.Emily_Text || "Their cybersecurity consulting and implementation services protected our business from potential threats. The team's expertise and ongoing support have been invaluable.",
-    }
-  ], [selectedLanguage]);
-
   // Industry partners and clients
   const partners = [
     { name: "TechCorp", logo: "🏢" },
@@ -67,47 +37,12 @@ const Team = () => {
 
         {/* Main Content */}
         <div className="social-proof-content">
-          <div className="content-left" data-aos="fade-right">
+          <div className="content-center" data-aos="fade-up">
             <h2>
               <span className="title-highlight">{translations[selectedLanguage]?.Why_Different || "Hyper Scale Insights isn't just another consulting firm"}</span>
               {translations[selectedLanguage]?.Why_Description || "; it's a complete business transformation partner for digital and strategic growth."} 
               {translations[selectedLanguage]?.Why_Extended_Description || "Instead of dealing with multiple consultants, run everything from a fast, scalable, and customizable approach. What do you need more?"}
             </h2>
-          </div>
-          
-          <div className="content-right" data-aos="fade-left">
-            <div className="testimonials-grid">
-              {testimonials.map((testimonial, index) => (
-                <div key={testimonial.id} className="testimonial-card" data-aos="fade-up" data-aos-delay={index * 150}>
-                  <div className="testimonial-header">
-                    <div className="quote-icon">
-                      <BsQuote size={20} />
-                    </div>
-                    <div className="rating">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <HiStar key={`star-${testimonial.id}-${i}`} size={14} />
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <blockquote className="testimonial-text">
-                    "{testimonial.text}"
-                  </blockquote>
-                  
-                  <div className="testimonial-author">
-                    <img 
-                      src={testimonial.avatar} 
-                      alt={testimonial.name}
-                      className="author-avatar"
-                    />
-                    <div className="author-info">
-                      <div className="author-name">{testimonial.name}</div>
-                      <div className="author-role">{testimonial.role}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 

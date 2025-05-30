@@ -57,18 +57,7 @@ export const translations = {
         Happy_Clients: "عملاء سعداء",
         Industry_Experts: "خبراء الصناعة",
         Meet_Our_Team: "تعرف على فريقنا الخبير",
-        Team_Description: "يجلب محترفونا المتفانون سنوات من الخبرة والتخصص لمساعدة تحويل عملك.",
-        
-        // Testimonials
-        Sarah_Johnson: "سارة جونسون",
-        Sarah_Role: "الرئيس التنفيذي، TechFlow Solutions",
-        Sarah_Text: "حولت Hyper Scale Insights عمليات أعمالنا بالكامل. خدمات الاستشارات الاستراتيجية والتحول الرقمي زادت كفاءتنا بنسبة 200% وساعدتنا على التوسع بسرعة.",
-        Michael_Chen: "مايكل تشين",
-        Michael_Role: "المؤسس، CloudHost Pro",
-        Michael_Text: "حلول ذكاء الأعمال التي نفذوها أعطتنا رؤى لم نحصل عليها من قبل. اتخاذ القرارات لدينا الآن مدفوع بالبيانات وعائد الاستثمار زاد بنسبة 300%.",
-        Emily_Rodriguez: "إميلي رودريغيز",
-        Emily_Role: "مدير العمليات، WebCraft",
-        Emily_Text: "خدمات الاستشارات والتنفيذ للأمن السيبراني حمت أعمالنا من التهديدات المحتملة. خبرة الفريق والدعم المستمر كانة لا تقدر بثمن.",
+        Team_Description: "محترفونا المتفانون يجلبون سنوات من الخبرة والتخصص لمساعدة تحويل أعمالك.",
         
         // Real Team Members
         Nabil: "نبيل",
@@ -236,17 +225,6 @@ export const translations = {
         Meet_Our_Team: "Meet Our Expert Team",
         Team_Description: "Our dedicated professionals bring years of experience and expertise to help transform your business.",
         
-        // Testimonials
-        Sarah_Johnson: "Sarah Johnson",
-        Sarah_Role: "CEO, TechFlow Solutions",
-        Sarah_Text: "Hyper Scale Insights transformed our business operations completely. Their strategic consulting and digital transformation services increased our efficiency by 200% and helped us scale rapidly.",
-        Michael_Chen: "Michael Chen",
-        Michael_Role: "Founder, CloudHost Pro",
-        Michael_Text: "The business intelligence solutions they implemented gave us insights we never had before. Our decision-making is now data-driven and our ROI has increased by 300%.",
-        Emily_Rodriguez: "Emily Rodriguez",
-        Emily_Role: "Operations Manager, WebCraft",
-        Emily_Text: "Their cybersecurity consulting and implementation services protected our business from potential threats. The team's expertise and ongoing support have been invaluable.",
-        
         // Real Team Members
         Nabil: "Nabil",
         Sarah: "Sarah",
@@ -412,17 +390,6 @@ export const translations = {
         Industry_Experts: "Branschexperter",
         Meet_Our_Team: "Träffa Vårt Expertteam",
         Team_Description: "Våra dedikerade professionella medarbetare bidrar med års erfarenhet och expertis för att hjälpa till att transformera ditt företag.",
-        
-        // Testimonials
-        Sarah_Johnson: "Sarah Johnson",
-        Sarah_Role: "VD, TechFlow Solutions",
-        Sarah_Text: "Hyper Scale Insights transformerade våra affärsverksamheter helt. Deras strategiska konsultation och digitala transformationstjänster ökade vår effektivitet med 200% och hjälpte oss att skala snabbt.",
-        Michael_Chen: "Michael Chen",
-        Michael_Role: "Grundare, CloudHost Pro",
-        Michael_Text: "Business intelligence-lösningarna de implementerade gav oss insikter vi aldrig haft tidigare. Vårt beslutsfattande är nu datadrivet och vår ROI har ökat med 300%.",
-        Emily_Rodriguez: "Emily Rodriguez",
-        Emily_Role: "Verksamhetschef, WebCraft",
-        Emily_Text: "Deras cybersäkerhetskonsultation och implementeringstjänster skyddade vårt företag från potentiella hot. Teamets expertis och pågående support har varit ovärderlig.",
         
         // Real Team Members
         Nabil: "Nabil",

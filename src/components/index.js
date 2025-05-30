@@ -5,3 +5,5 @@ export { default as Team } from "./team/Team";
 export { default as Contact } from "./contact/Contact";
 export { default as Faq } from "./faq/Faq";
 export { default as Footer } from "./footer/Footer";
+export { default as SEO } from "./SEO/SEO";
+export { default as StructuredData } from "./SEO/StructuredData";

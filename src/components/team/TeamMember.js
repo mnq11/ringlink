@@ -10,8 +10,8 @@ const TeamMember = ({ imageUrl, name, role }) => {
     return (
         <div className="team-member">
             <img src={imageUrl} alt={name} />
-            <h3>{translations[selectedLanguage][name]}</h3>
-            <p>{translations[selectedLanguage][role]}</p>
+            <h3>{translations[selectedLanguage]?.[name] || name}</h3>
+            <p>{translations[selectedLanguage]?.[role] || role}</p>
         </div>
     );
 };

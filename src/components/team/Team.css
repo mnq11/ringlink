@@ -343,6 +343,131 @@
   letter-spacing: 0.05em;
 }
 
+/* Team Members Section */
+.team-members-section {
+  margin: 8rem 0 6rem 0;
+  padding: 6rem 0;
+  background: var(--accent-bg);
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-members-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(102, 126, 234, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.team-members-section .section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.team-members-section .section-header h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-bottom: 1.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.team-members-section .section-header p {
+  font-size: 1.6rem;
+  color: var(--secondary-text);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 0 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.team-members-grid .team-member {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-members-grid .team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.team-members-grid .team-member:hover::before {
+  opacity: 1;
+}
+
+.team-members-grid .team-member:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-members-grid .team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: 4px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.team-members-grid .team-member:hover img {
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.team-members-grid .team-member h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 0.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.team-members-grid .team-member p {
+  font-size: 1.4rem;
+  color: var(--secondary-text);
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .social-proof-content {
@@ -357,6 +482,17 @@
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+  }
+  
+  .team-members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+  
+  .team-members-section {
+    margin: 6rem 0 4rem 0;
+    padding: 4rem 0;
   }
 }
 
@@ -426,6 +562,34 @@
   .stat-number {
     font-size: 3.6rem;
   }
+  
+  .team-members-section {
+    margin: 4rem 0 3rem 0;
+    padding: 3rem 0;
+  }
+  
+  .team-members-section .section-header h3 {
+    font-size: 2.8rem;
+  }
+  
+  .team-members-section .section-header p {
+    font-size: 1.5rem;
+  }
+  
+  .team-members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .team-members-grid .team-member {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .team-members-grid .team-member img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -471,4 +635,41 @@
   .stat-label {
     font-size: 1.3rem;
   }
+}
+
+.stats-grid {
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.stat-number {
+  font-size: 3.6rem;
+}
+
+.team-members-section {
+  margin: 4rem 0 3rem 0;
+  padding: 3rem 0;
+}
+
+.team-members-section .section-header h3 {
+  font-size: 2.8rem;
+}
+
+.team-members-section .section-header p {
+  font-size: 1.5rem;
+}
+
+.team-members-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.team-members-grid .team-member {
+  padding: 2.5rem 1.5rem;
+}
+
+.team-members-grid .team-member img {
+  width: 100px;
+  height: 100px;
 }

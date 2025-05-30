@@ -1,16 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
 import "./Header.css";
-import { BsArrowRight, BsCheckCircle } from "react-icons/bs";
-import { HiSparkles } from "react-icons/hi";
-import AOS from "aos";
 import "aos/dist/aos.css";
+import { HiSparkles } from "react-icons/hi";
+import { BsArrowRight, BsCheckCircle } from "react-icons/bs";
+import { LanguageContext } from "../../language/LanguageContext";
+import { translations } from "../../language/translations";
 
 const Header = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  const { selectedLanguage } = useContext(LanguageContext);
   
   return (
     <section id="home" className="hero-section">
@@ -23,61 +20,59 @@ const Header = () => {
         <div className="hero-content">
           <div className="hero-badge" data-aos="fade-up">
             <HiSparkles size={16} />
-            <span>Supercharge your business</span>
+            <span>{translations[selectedLanguage]?.Hero_Badge || "Supercharge your business"}</span>
           </div>
           
           <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
-            <span className="title-line">Supercharge your business</span>
-            <span className="title-line">, with our</span>
-            <span className="title-line text-gradient">all-in-one</span>
-            <span className="title-line">digital services platform.</span>
+            <span className="title-line">{translations[selectedLanguage]?.Hero_Title_1 || "Supercharge your business"}</span>
+            <span className="title-line">{translations[selectedLanguage]?.Hero_Title_2 || ", with our"}</span>
+            <span className="title-line text-gradient">{translations[selectedLanguage]?.Hero_Title_3 || "all-in-one"}</span>
+            <span className="title-line">{translations[selectedLanguage]?.Hero_Title_4 || "digital services platform."}</span>
           </h1>
           
           <p className="hero-description" data-aos="fade-up" data-aos-delay="200">
-            Struggling to keep track of your business? Managing projects, clients, digital transformation; 
-            running your business shouldn't be hard. With Hyper Scale Insights, you can automate processes, 
-            accelerate growth, and transform operations – all from expert digital consultancy.
+            {translations[selectedLanguage]?.Hero_Description || "Struggling to keep track of your business? Managing projects, clients, digital transformation; running your business shouldn't be hard. With Hyper Scale Insights, you can automate processes, accelerate growth, and transform operations – all from expert digital consultancy."}
           </p>
           
           <div className="hero-actions" data-aos="fade-up" data-aos-delay="300">
             <button className="btn btn-primary btn-lg">
-              <span>Start free consultation</span>
+              <span>{translations[selectedLanguage]?.Start_Free_Consultation || "Start free consultation"}</span>
               <BsArrowRight size={18} />
             </button>
             <button className="btn btn-secondary btn-lg">
-              <span>Watch demo</span>
+              <span>{translations[selectedLanguage]?.Watch_Demo || "Watch demo"}</span>
             </button>
           </div>
           
           <div className="hero-features" data-aos="fade-up" data-aos-delay="400">
             <div className="feature-item">
               <BsCheckCircle size={16} />
-              <span>Free consultation</span>
+              <span>{translations[selectedLanguage]?.Free_Consultation || "Free consultation"}</span>
             </div>
             <div className="feature-item">
               <BsCheckCircle size={16} />
-              <span>No commitment required</span>
+              <span>{translations[selectedLanguage]?.No_Commitment || "No commitment required"}</span>
             </div>
             <div className="feature-item">
               <BsCheckCircle size={16} />
-              <span>Expert guidance</span>
+              <span>{translations[selectedLanguage]?.Expert_Guidance || "Expert guidance"}</span>
             </div>
           </div>
           
           <div className="hero-stats" data-aos="fade-up" data-aos-delay="500">
             <div className="stat-item">
               <div className="stat-number">500+</div>
-              <div className="stat-label">Successful projects</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Successful_Projects || "Successful projects"}</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
               <div className="stat-number">99%</div>
-              <div className="stat-label">Client satisfaction</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Client_Satisfaction || "Client satisfaction"}</div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
               <div className="stat-number">24/7</div>
-              <div className="stat-label">Expert support</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Expert_Support || "Expert support"}</div>
             </div>
           </div>
         </div>

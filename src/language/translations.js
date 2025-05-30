@@ -1,356 +1,532 @@
-// src/translations.js
-
 export const translations = {
-
     AR: {
-        Hlkt: "حلقة",
-        Wsl: "وصل",
         Home: "الصفحة الرئيسية",
         Services: "خدمات",
         Team: "فريق",
         Contact: "اتصل",
         Learn_More: "تعلم المزيد",
-        Header_Title_1: "خدمات العلاقات العامة الشاملة",
-        Header_Title_3: "وسع نطاقك",
-        Header_Paragraph: "نطاق متنوع من الخدمات العامة للعلاقات، بما في ذلك العلاقات الإعلامية والعلاقات الحكومية وإنشاء المحتوى والشؤون العامة. فريقنا من الخبراء ملتزم بمساعدتك على تطوير عملك وإنشاء سمعة إيجابية من خلال تطوير استراتيجيات العلاقات العامة المؤثرة المخصصة لأهدافك واحتياجاتك الفريدة.",
-        Core_serverss: "الخدمات الأساسية",
-        Core_Paragraph: "نحن نقدم مجموعة واسعة من الخدمات لمساعدتك على تحقيق أهدافك. فريقنا من الخبراء ملتزم بمساعدتك على تطوير عملك وإنشاء سمعة إيجابية من خلال تطوير استراتيجيات العلاقات العامة المؤثرة المخصصة لأهدافك واحتياجاتك الفريدة.",
-        Meet_members: "تعرف على أعضاء فريقنا",
-        FAQs: "أسئلة وأجوبة",
-        FAQs_Paragraph: "الإجابات على بعض أسئلة الأكثر شيوعًا حول خدماتنا.",
-        Talke_to_Use: "تحدث معنا",
-
-        // Contact
         contact_now: "اتصل بنا الآن",
-
-        // teamNames
+        Select_Language: "اختر اللغة",
+        
+        // Hero Section
+        Hero_Badge: "عزز عملك",
+        Hero_Title_1: "عزز عملك",
+        Hero_Title_2: "، مع منصة",
+        Hero_Title_3: "الخدمات الرقمية الشاملة",
+        Hero_Title_4: "الخاصة بنا.",
+        Hero_Description: "تواجه صعوبة في تتبع عملك؟ إدارة المشاريع والعملاء والتحول الرقمي؛ إدارة عملك لا يجب أن تكون صعبة. مع Hyper Scale Insights، يمكنك أتمتة العمليات وتسريع النمو وتحويل العمليات - كل ذلك من خلال الاستشارات الرقمية المتخصصة.",
+        Start_Free_Consultation: "ابدأ استشارة مجانية",
+        Watch_Demo: "شاهد العرض التوضيحي",
+        Free_Consultation: "استشارة مجانية",
+        No_Commitment: "لا يوجد التزام مطلوب",
+        Expert_Guidance: "إرشاد خبير",
+        Successful_Projects: "مشاريع ناجحة",
+        Client_Satisfaction: "رضا العملاء",
+        Expert_Support: "دعم خبير",
+        
+        // Services Section
+        Services_Title: "تخيل ما يمكنك فعله مع قوة الخدمات.",
+        Services_Description: "حان الوقت لتوديع العمليات غير الفعالة والمهام اليدوية اللا نهائية واختناقات الأعمال. مبني كحل رقمي كامل سريع وموثوق وقابل للتوسع.",
+        All_Business_Needs: "جميع احتياجات عملك في مكان واحد",
+        All_Business_Needs_Desc: "كل مشروع وكل عميل وكل تفاعل يتم إدارته بسلاسة، لذا تعرف دائماً حالة عملك وما يحتاج إلى اهتمام ومتى تتابع.",
+        Digital_Transformation: "التحول الرقمي الذي يحقق النتائج",
+        Digital_Transformation_Desc: "لا تحتاج للكفاح مع العمليات القديمة بعد الآن. نحن نؤتمت سير العمل ونحسن العمليات وننفذ حلول متطورة بمنهجيات مثبتة.",
+        Technology_Implementation: "تنفيذ التكنولوجيا الذي 'يعمل فقط'",
+        Technology_Implementation_Desc: "في اللحظة التي تتعامل فيها مع خدماتنا، ننفذ حلول تكنولوجية قوية وندمج الأنظمة وندير النشر باستخدام أطر عمل قوية - لذا كل شيء يعمل بسلاسة.",
+        Business_Intelligence: "ذكاء الأعمال الذي يقود القرارات",
+        Business_Intelligence_Desc: "حول بياناتك إلى رؤى قابلة للتنفيذ. حلول التحليلات لدينا توفر لوحات معلومات في الوقت الفعلي ونمذجة تنبؤية وتوصيات استراتيجية للنمو.",
+        Cybersecurity: "الأمن السيبراني الذي يحمي مستقبلك",
+        Cybersecurity_Desc: "احم أصولك الرقمية باستراتيجيات أمان شاملة. نحن نقيم المخاطر وننفذ تدابير الحماية ونضمن الامتثال لمعايير الصناعة.",
+        Strategic_Consulting: "الاستشارات الاستراتيجية التي تعكس رؤيتك",
+        Strategic_Consulting_Desc: "يجب أن يعكس عملك أهدافك وقيمك الفريدة. مع الاستشارات الشخصية، نساعدك في تطوير الاستراتيجيات وتحسين العمليات وتحقيق النمو المستدام.",
+        And_List_Goes_On: "والقائمة تطول...",
+        Explore_All_Services: "استكشف جميع الخدمات",
+        Services_CTA_Description: "لم نخدش حتى سطح ما يمكننا فعله، ونحن فقط نبدأ. أفضل شيء في جميع خدماتنا - كل شيء يعمل معاً، لذا لا تحتاج إلى ذلك.",
+        Explore_Client_Management: "استكشف إدارة العملاء",
+        Explore_Transformation_Services: "استكشف خدمات التحول",
+        Discover_Implementation_Services: "اكتشف خدمات التنفيذ",
+        Explore_Analytics_Solutions: "استكشف حلول التحليلات",
+        Discover_Security_Solutions: "اكتشف حلول الأمان",
+        Explore_Strategic_Consulting: "استكشف الاستشارات الاستراتيجية",
+        
+        // Team Section
+        Join_Leaders: "انضم إلى قادة الصناعة الرائدين:",
+        Why_Different: "Hyper Scale Insights ليست مجرد شركة استشارية أخرى",
+        Why_Description: "؛ إنها شريك تحول أعمال كامل للنمو الرقمي والاستراتيجي.",
+        Why_Extended_Description: "بدلاً من التلاعب بعدة استشاريين، أدر كل شيء من نهج سريع وقابل للتوسع وقابل للتخصيص بسهولة. ما الذي تحتاجه أكثر؟",
+        Happy_Clients: "عملاء سعداء",
+        Industry_Experts: "خبراء الصناعة",
+        Meet_Our_Team: "تعرف على فريقنا الخبير",
+        Team_Description: "يجلب محترفونا المتفانون سنوات من الخبرة والتخصص لمساعدة تحويل عملك.",
+        
+        // Testimonials
+        Sarah_Johnson: "سارة جونسون",
+        Sarah_Role: "الرئيس التنفيذي، TechFlow Solutions",
+        Sarah_Text: "حولت Hyper Scale Insights عمليات أعمالنا بالكامل. خدمات الاستشارات الاستراتيجية والتحول الرقمي زادت كفاءتنا بنسبة 200% وساعدتنا على التوسع بسرعة.",
+        Michael_Chen: "مايكل تشين",
+        Michael_Role: "المؤسس، CloudHost Pro",
+        Michael_Text: "حلول ذكاء الأعمال التي نفذوها أعطتنا رؤى لم نحصل عليها من قبل. اتخاذ القرارات لدينا الآن مدفوع بالبيانات وعائد الاستثمار زاد بنسبة 300%.",
+        Emily_Rodriguez: "إميلي رودريغيز",
+        Emily_Role: "مدير العمليات، WebCraft",
+        Emily_Text: "خدمات الاستشارات والتنفيذ للأمن السيبراني حمت أعمالنا من التهديدات المحتملة. خبرة الفريق والدعم المستمر كانة لا تقدر بثمن.",
+        
+        // Real Team Members
         Nabil: "نبيل",
         Sarah: "سارة",
         Mohammed: "محمد",
-        Akram: "أكرم",
         Haidar: "حيدر",
         Hamed: "حامد",
-
-        //Roles
         Public_Relations_Manager: "مدير العلاقات العامة",
-        Events_Coordinator: "منسق الأحداث",
-        Exporter: "مصدر",
+        Events_Coordinator: "منسق الفعاليات",
         Developer: "مطور",
-        Communications_Specialist: "خبير الاتصالات",
-        Public_Relations_Internee: "متدرب علاقات عامة",
         Lawyer: "محامي",
         Local_Representative_in_turkey: "ممثل محلي في تركيا",
 
-
-        //     // Services
-        Feature1_Heading: "خدمات السفر والسياحة",
-        Feature1_Text:
-            "خدمات السفر والسياحة هي الخدمات التي تقدم للأشخاص الذين يسافرون أو يقضون عطلة تشمل هذه الخدمات النقل والإقامة والترفيه",
-        Feature2_Heading: "الشؤون العامة",
-        Feature2_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والجمهور",
-        Feature3_Heading: "العلاقات الحكومية",
-        Feature3_Text: "إدارة كيفية التفاعل بين شركة أو مؤسسة أو شخص مع السلطات والجهات الحكومية",
-        Feature4_Heading: "العلاقات العامة",
-        Feature4_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والجمهور",
-        Feature5_Heading: "العلاقات الإعلامية",
-        Feature5_Text: "إدارة تدفق المعلومات بين شخص أو مؤسسة والإعلام",
-        Feature6_Heading: "تنسيق العلاقات التجارية والاستثمارية",
-        Feature6_Text: "إدارة كيفية التفاعل بين شركة أو مؤسسة أو شخص مع التجار و الشركات وانشاء روابط تجارية ",
-
+        // FAQ Section
+        FAQs: "أسئلة وأجوبة",
+        FAQs_Description: "الإجابات على بعض الأسئلة الأكثر شيوعاً حول خدماتنا.",
+        Your_Questions_Answered: "أسئلتك، مُجابة",
+        FAQ_Q1: "ما أنواع الخدمات الرقمية التي تقدمونها؟",
+        FAQ_A1: "نقدم خدمات رقمية شاملة تشمل ذكاء الأعمال والتحليلات، استشارات التحول الرقمي، تنفيذ التكنولوجيا، الاستشارات التجارية الاستراتيجية، حلول الأمن السيبراني، وتطوير استراتيجية الابتكار.",
+        FAQ_Q2: "كيف تتعاملون مع مشاريع التحول الرقمي؟",
+        FAQ_A2: "نهج التحول الرقمي لدينا مصمم خصيصاً لكل عميل. نبدأ بتقييم شامل، نطور خارطة طريق استراتيجية، ننفذ الحلول على مراحل، ونقدم دعماً مستمراً لضمان التبني الناجح وعائد الاستثمار.",
+        FAQ_Q3: "ما الصناعات التي تتخصصون فيها؟",
+        FAQ_A3: "نعمل عبر صناعات مختلفة تشمل شركات التكنولوجيا، الخدمات المالية، منظمات الرعاية الصحية، التصنيع، والتجارة الإلكترونية. خبرتنا تسمح لنا بتكييف حلولنا لاحتياجات الصناعة المحددة.",
+        FAQ_Q4: "كم تستغرق مشاركة الاستشارات النموذجية؟",
+        FAQ_A4: "الجداول الزمنية للمشاريع تختلف حسب النطاق والتعقيد. مشاريع الاستشارات الاستراتيجية تتراوح عادة من 3-6 أشهر، بينما تنفيذ التكنولوجيا يمكن أن يستغرق 6-18 شهراً. نقدم جداول زمنية مفصلة خلال استشارتنا الأولية.",
+        FAQ_Q5: "هل تقدمون دعماً مستمراً بعد إكمال المشروع؟",
+        FAQ_A5: "نعم! نقدم دعماً شاملاً بعد التنفيذ يشمل التدريب والصيانة والتحسين والإرشاد الاستراتيجي لضمان النجاح طويل المدى والتحسين المستمر لمبادراتك الرقمية.",
+        FAQ_Q6: "كيف تقيسون نجاح خدماتكم الاستشارية؟",
+        FAQ_A6: "نضع مؤشرات أداء رئيسية ومقاييس نجاح واضحة في بداية المشروع، تشمل تحسينات عائد الاستثمار، مكاسب الكفاءة، تقليل التكاليف، ومؤشرات نمو الأعمال. التقارير المنتظمة تضمن الشفافية والمساءلة.",
+        FAQ_Q7: "هل يمكنكم العمل مع البنية التحتية التكنولوجية الحالية لدينا؟",
+        FAQ_A7: "بالطبع! نتخصص في دمج الحلول الجديدة مع الأنظمة الموجودة. فريقنا يجري تقييمات شاملة لضمان التكامل السلس مع تعظيم استثماراتك التكنولوجية الحالية.",
+        FAQ_Q8: "كيف نبدأ مع خدماتكم؟",
+        FAQ_A8: "البداية بسيطة! احجز استشارة مجانية حيث سنناقش تحدياتك وأهدافك ومتطلباتك. سنقدم بعدها اقتراحاً مخصصاً يوضح نهجنا الموصى به والجدول الزمني.",
+        Need_Expert_Guidance: "تحتاج إرشاد خبير؟",
+        Expert_Guidance_Text: "فريق الاستشارات لدينا جاهز لمساعدتك في التنقل في رحلة التحول الرقمي. احجز استشارة مجانية لمناقشة احتياجاتك المحددة.",
+        Schedule_Consultation: "احجز استشارة",
+        Helpful_Resources: "موارد مفيدة",
+        Case_Studies: "دراسات الحالة",
+        Industry_Whitepapers: "أوراق بيضاء للصناعة",
+        Blog_Insights: "مدونة ورؤى",
+        Expert_Webinars: "ندوات الخبراء",
+        Talk_to_Us: "تحدث معنا",
+        
+        // Footer
+        Ready_Transform: "جاهز لتحويل عملك؟",
+        Expert_Digital_Services: "الخدمات الرقمية الخبيرة هي",
+        Game_Changer: "تغيير جذري",
+        For_Modern_Businesses: "للأعمال الحديثة",
+        Experience_Power: "اختبر قوة الاستشارات الاستراتيجية والتحول الرقمي. احجز استشارة مجانية لاكتشاف كيف يمكننا تسريع نموك ونجاحك.",
+        Schedule_Free_Consultation: "احجز استشارة مجانية",
+        Transform_Business: "حول عملك",
+        Accelerate_Growth: "، سرّع نموك",
+        Free_Consultation_Available: ". استشارة مجانية متاحة.",
+        Brand_Description: "تمكين الأعمال من خلال الخدمات الرقمية الخبيرة والاستشارات الاستراتيجية. نساعد المنظمات على التحول والتوسع والنجاح في المشهد الرقمي.",
+        
+        // Footer Links
+        Industries: "الصناعات",
+        Resources: "الموارد",
+        Company: "الشركة",
+        Footer_Business_Intelligence: "ذكاء الأعمال",
+        Footer_Digital_Transformation: "التحول الرقمي",
+        Footer_Technology_Implementation: "تنفيذ التكنولوجيا",
+        Footer_Strategic_Consulting: "الاستشارات الاستراتيجية",
+        Footer_Cybersecurity_Solutions: "حلول الأمن السيبراني",
+        Footer_Innovation_Strategy: "استراتيجية الابتكار",
+        Footer_Data_Analytics: "تحليل البيانات",
+        Footer_Technology_Companies: "شركات التكنولوجيا",
+        Footer_Financial_Services: "الخدمات المالية",
+        Footer_Healthcare_Organizations: "منظمات الرعاية الصحية",
+        Footer_Manufacturing: "التصنيع",
+        Footer_Retail_Ecommerce: "التجارة الإلكترونية",
+        Footer_Whitepapers: "الأوراق البيضاء",
+        Footer_Industry_Research: "بحوث الصناعة",
+        Footer_Best_Practices: "أفضل الممارسات",
+        Footer_About_Us: "من نحن",
+        Footer_Careers: "الوظائف",
+        Footer_Partners: "الشركاء",
+        Footer_Privacy_Policy: "سياسة الخصوصية",
+        Footer_Terms_Conditions: "الشروط والأحكام",
+        Footer_Cookie_Settings: "إعدادات ملفات تعريف الارتباط",
+        All_Rights_Reserved: "جميع الحقوق محفوظة",
+        Copyright: "© 2024 Hyper Scale Insights. جميع الحقوق محفوظة.",
+        
+        // SEO Meta Content
+        SEO_Title: "Hyper Scale Insights - Business Intelligence, Data Analytics & Digital Transformation Solutions",
+        SEO_Description: "Leading business intelligence and data analytics company providing digital transformation, market research, business consulting, data visualization, predictive analytics, and strategic insights for enterprises worldwide.",
+        SEO_Keywords: "business intelligence, data analytics, digital transformation, market research, business consulting, data visualization, predictive analytics, strategic insights, enterprise solutions, business strategy, data science, machine learning, artificial intelligence, business automation, process optimization, performance analytics, competitive analysis, market intelligence, business growth, scalable solutions, cloud analytics, big data, dashboard development, reporting solutions, KPI tracking, business metrics, data-driven decisions, consulting services, technology solutions, innovation consulting, digital strategy",
+        
+        // Enhanced Service Descriptions with Keywords
+        Service_BI_Extended: "Transform your business with advanced business intelligence solutions including data warehousing, ETL processes, real-time analytics, predictive modeling, machine learning algorithms, statistical analysis, data mining, business reporting, dashboard development, KPI tracking, performance metrics, competitive intelligence, market analysis, customer analytics, financial analytics, operational analytics, and strategic planning tools.",
+        
+        Service_Digital_Extended: "Comprehensive digital transformation services covering cloud migration, legacy system modernization, API development, microservices architecture, DevOps implementation, agile methodologies, digital strategy consulting, technology roadmapping, change management, user experience optimization, mobile app development, web application development, e-commerce solutions, CRM implementation, ERP integration, and automation solutions.",
+        
+        Service_Consulting_Extended: "Strategic business consulting services including market research, competitive analysis, business process optimization, organizational development, performance improvement, growth strategy, innovation management, risk assessment, compliance consulting, financial planning, operational efficiency, supply chain optimization, customer experience enhancement, brand strategy, marketing analytics, and executive coaching.",
+        
+        // Industry-Specific Keywords
+        Industries_Served: "technology companies, financial services, healthcare organizations, manufacturing, e-commerce, retail, telecommunications, energy, automotive, aerospace, pharmaceuticals, biotechnology, education, government, non-profit organizations, startups, SMEs, enterprise corporations",
+        
+        Technology_Stack: "Python, R, SQL, Tableau, Power BI, Qlik, SAS, SPSS, Apache Spark, Hadoop, AWS, Azure, Google Cloud, Snowflake, Databricks, TensorFlow, PyTorch, Kubernetes, Docker, Jenkins, Git, Jira, Confluence, Salesforce, SAP, Oracle, Microsoft 365, SharePoint",
+        
+        // Location-Based SEO
+        Locations_Served: "Sweden, Stockholm, Gothenburg, Malmö, Uppsala, Nordic countries, Europe, Middle East, North Africa, Saudi Arabia, UAE, Qatar, Kuwait, Turkey, Germany, UK, France, Netherlands, Denmark, Norway, Finland",
+        
+        // Service Benefits Keywords
+        Benefits_Keywords: "increased ROI, improved efficiency, cost reduction, revenue growth, competitive advantage, market leadership, innovation acceleration, risk mitigation, compliance assurance, scalability, flexibility, automation, optimization, transformation, modernization, digitalization, data-driven insights, strategic planning, performance improvement, customer satisfaction, employee productivity, operational excellence, business agility, future-ready solutions"
     },
+    
     EN: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
         Home: "Home",
         Services: "Services",
         Team: "Team",
         Contact: "Contact",
         Learn_More: "Learn More",
-        Header_Title_1: " Comprehensive Public Relations Services",
-        Header_Title_3: " Expanding Your Reach",
-        Header_Paragraph: " Diverse range of public relations services, including media relations, government relations, content creation, and public affairs. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
-        Core_serverss: "Core Services",
-        Core_Paragraph: "We offer a wide range of services to help you achieve your goals. Our team of experts is dedicated to helping you grow your business and establish a positive reputation by developing effective PR strategies tailored to your unique goals and needs.",
-        Meet_members: "Meet our talented and dedicated team members.",
-        FAQs: "FAQs",
-        FAQs_Paragraph: "Answers to some of the most frequently asked questions about our services.",
-        Talke_to_Use: "Talk to us",
-        // Contact
         contact_now: "Contact Us Now",
-
-        // teamNames
+        Select_Language: "Select Language",
+        
+        // Hero Section
+        Hero_Badge: "Supercharge your business",
+        Hero_Title_1: "Supercharge your business",
+        Hero_Title_2: ", with our",
+        Hero_Title_3: "all-in-one",
+        Hero_Title_4: "digital services platform.",
+        Hero_Description: "Struggling to keep track of your business? Managing projects, clients, digital transformation; running your business shouldn't be hard. With Hyper Scale Insights, you can automate processes, accelerate growth, and transform operations – all from expert digital consultancy.",
+        Start_Free_Consultation: "Start free consultation",
+        Watch_Demo: "Watch demo",
+        Free_Consultation: "Free consultation",
+        No_Commitment: "No commitment required",
+        Expert_Guidance: "Expert guidance",
+        Successful_Projects: "Successful projects",
+        Client_Satisfaction: "Client satisfaction",
+        Expert_Support: "Expert support",
+        
+        // Services Section
+        Services_Title: "Imagine what you can do with a powerhouse of services.",
+        Services_Description: "It's time to say goodbye to inefficient processes, endless manual tasks, and business bottlenecks. Built as a complete digital solution that is fast, reliable, and scalable.",
+        All_Business_Needs: "All your business needs in one place",
+        All_Business_Needs_Desc: "Every project, every client, and every interaction is managed seamlessly, so you always know your business status, what needs attention, and when to follow up.",
+        Digital_Transformation: "Digital transformation that delivers",
+        Digital_Transformation_Desc: "You don't have to struggle with outdated processes anymore. We automate workflows, optimize operations, and implement cutting-edge solutions with proven methodologies.",
+        Technology_Implementation: "Technology implementation that 'just works'",
+        Technology_Implementation_Desc: "The moment you engage our services, we implement robust technology solutions, integrate systems, and manage deployments using powerful frameworks—so everything runs smoothly.",
+        Business_Intelligence: "Business intelligence that drives decisions",
+        Business_Intelligence_Desc: "Transform your data into actionable insights. Our analytics solutions provide real-time dashboards, predictive modeling, and strategic recommendations for growth.",
+        Cybersecurity: "Cybersecurity that protects your future",
+        Cybersecurity_Desc: "Safeguard your digital assets with comprehensive security strategies. We assess risks, implement protection measures, and ensure compliance with industry standards.",
+        Strategic_Consulting: "Strategic consulting that mirrors your vision",
+        Strategic_Consulting_Desc: "Your business should reflect your unique goals and values. With personalized consulting, we help you develop strategies, optimize processes, and achieve sustainable growth.",
+        And_List_Goes_On: "And the list goes on…",
+        Explore_All_Services: "Explore all services",
+        Services_CTA_Description: "We haven't scratched the surface of what we can do, and we're just getting started. The best thing about all our services - everything works together, so you don't need to worry about it.",
+        Explore_Client_Management: "Explore client management",
+        Explore_Transformation_Services: "Explore transformation services",
+        Discover_Implementation_Services: "Discover implementation services",
+        Explore_Analytics_Solutions: "Explore analytics solutions",
+        Discover_Security_Solutions: "Discover security solutions",
+        Explore_Strategic_Consulting: "Explore strategic consulting",
+        
+        // Team Section
+        Join_Leaders: "Join top industry leaders:",
+        Why_Different: "Hyper Scale Insights isn't just another consulting firm",
+        Why_Description: "; it's a complete business transformation partner for digital and strategic growth.",
+        Why_Extended_Description: "Instead of dealing with multiple consultants, run everything from a fast, scalable, and customizable approach. What do you need more?",
+        Happy_Clients: "Happy Clients",
+        Industry_Experts: "Industry Experts",
+        Meet_Our_Team: "Meet Our Expert Team",
+        Team_Description: "Our dedicated professionals bring years of experience and expertise to help transform your business.",
+        
+        // Testimonials
+        Sarah_Johnson: "Sarah Johnson",
+        Sarah_Role: "CEO, TechFlow Solutions",
+        Sarah_Text: "Hyper Scale Insights transformed our business operations completely. Their strategic consulting and digital transformation services increased our efficiency by 200% and helped us scale rapidly.",
+        Michael_Chen: "Michael Chen",
+        Michael_Role: "Founder, CloudHost Pro",
+        Michael_Text: "The business intelligence solutions they implemented gave us insights we never had before. Our decision-making is now data-driven and our ROI has increased by 300%.",
+        Emily_Rodriguez: "Emily Rodriguez",
+        Emily_Role: "Operations Manager, WebCraft",
+        Emily_Text: "Their cybersecurity consulting and implementation services protected our business from potential threats. The team's expertise and ongoing support have been invaluable.",
+        
+        // Real Team Members
         Nabil: "Nabil",
         Sarah: "Sarah",
-        Farhan: "Farhan",
         Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
         Haidar: "Haidar",
         Hamed: "Hamed",
-        //Roles
         Public_Relations_Manager: "Public Relations Manager",
         Events_Coordinator: "Events Coordinator",
-        Exporter: "Exporter",
         Developer: "Developer",
-        Communications_Specialist: "Communications Specialist",
-        Public_Relations_Internee: "Public Relations Internee",
         Lawyer: "Lawyer",
         Local_Representative_in_turkey: "Local Representative in Turkey",
 
-        // Services
-        Feature1_Heading: "Travel and tourism services",
-        Feature1_Text: "Travel and tourism services are services that are provided to people who are traveling or are on vacation. These services include transportation, accommodation, and entertainment.",
-        Feature2_Heading: "Public Affairs",
-        Feature2_Text: "Managing the flow of information between an individual or an organization and the public.",
-
-
-        Feature3_Heading: "Government Relations",
-        Feature3_Text: "Managing how a company, organization, or individual interacts with government officials and agencies.",
-
-        Feature4_Heading: "Public Relations",
-        Feature4_Text: "Managing the flow of information between an individual or an organization and the public.",
-
-
-        Feature5_Heading: "Media Relations",
-        Feature5_Text: "Managing the flow of information between an individual or an organization and the media.",
-
-        Feature6_Heading: "Business and Investment Relations Coordination",
-        Feature6_Text: "Managing how a company, organization, or individual interacts with traders and companies and establishing business links.",
-
-    }, SE: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
+        // FAQ Section
+        FAQs: "FAQs",
+        FAQs_Description: "Answers to some of the most frequently asked questions about our services.",
+        Your_Questions_Answered: "Your questions, answered",
+        FAQ_Q1: "What types of digital services do you offer?",
+        FAQ_A1: "We provide comprehensive digital services including business intelligence & analytics, digital transformation consulting, technology implementation, strategic business consulting, cybersecurity solutions, and innovation strategy development.",
+        FAQ_Q2: "How do you approach digital transformation projects?",
+        FAQ_A2: "Our digital transformation approach is tailored to each client. We start with a comprehensive assessment, develop a strategic roadmap, implement solutions in phases, and provide ongoing support to ensure successful adoption and ROI.",
+        FAQ_Q3: "What industries do you specialize in?",
+        FAQ_A3: "We work across various industries including technology companies, financial services, healthcare organizations, manufacturing, and retail & e-commerce. Our expertise allows us to adapt our solutions to industry-specific needs.",
+        FAQ_Q4: "How long does a typical consulting engagement take?",
+        FAQ_A4: "Project timelines vary based on scope and complexity. Strategic consulting projects typically range from 3-6 months, while technology implementations can take 6-18 months. We provide detailed timelines during our initial consultation.",
+        FAQ_Q5: "Do you provide ongoing support after project completion?",
+        FAQ_A5: "Yes! We offer comprehensive post-implementation support including training, maintenance, optimization, and strategic guidance to ensure long-term success and continuous improvement of your digital initiatives.",
+        FAQ_Q6: "How do you measure the success of your consulting services?",
+        FAQ_A6: "We establish clear KPIs and success metrics at the project outset, including ROI improvements, efficiency gains, cost reductions, and business growth indicators. Regular reporting ensures transparency and accountability.",
+        FAQ_Q7: "Can you work with our existing technology infrastructure?",
+        FAQ_A7: "Absolutely! We specialize in integrating new solutions with existing systems. Our team conducts thorough assessments to ensure seamless integration while maximizing your current technology investments.",
+        FAQ_Q8: "How do we get started with your services?",
+        FAQ_A8: "Getting started is simple! Schedule a free consultation where we'll discuss your challenges, goals, and requirements. We'll then provide a customized proposal outlining our recommended approach and timeline.",
+        Need_Expert_Guidance: "Need expert guidance?",
+        Expert_Guidance_Text: "Our consulting team is ready to help you navigate your digital transformation journey. Schedule a free consultation to discuss your specific needs.",
+        Schedule_Consultation: "Schedule Consultation",
+        Helpful_Resources: "Helpful Resources",
+        Case_Studies: "Case Studies",
+        Industry_Whitepapers: "Industry Whitepapers",
+        Blog_Insights: "Blog & Insights",
+        Expert_Webinars: "Expert Webinars",
+        Talk_to_Us: "Talk to Us",
+        
+        // Footer
+        Ready_Transform: "Ready to transform your business?",
+        Expert_Digital_Services: "Expert digital services are a",
+        Game_Changer: "game changer",
+        For_Modern_Businesses: "for modern businesses",
+        Experience_Power: "Experience the power of strategic consulting and digital transformation. Schedule a free consultation to discover how we can accelerate your growth and success.",
+        Schedule_Free_Consultation: "Schedule free consultation",
+        Transform_Business: "Transform your business",
+        Accelerate_Growth: ", accelerate your growth",
+        Free_Consultation_Available: ". Free consultation available.",
+        Brand_Description: "Empowering businesses through expert digital services and strategic consulting. We help organizations transform, scale, and succeed in the digital landscape.",
+        
+        // Footer Links
+        Industries: "Industries",
+        Resources: "Resources",
+        Company: "Company",
+        Footer_Business_Intelligence: "Business Intelligence",
+        Footer_Digital_Transformation: "Digital Transformation",
+        Footer_Technology_Implementation: "Technology Implementation",
+        Footer_Strategic_Consulting: "Strategic Consulting",
+        Footer_Cybersecurity_Solutions: "Cybersecurity Solutions",
+        Footer_Innovation_Strategy: "Innovation Strategy",
+        Footer_Data_Analytics: "Data Analytics",
+        Footer_Technology_Companies: "Technology Companies",
+        Footer_Financial_Services: "Financial Services",
+        Footer_Healthcare_Organizations: "Healthcare Organizations",
+        Footer_Manufacturing: "Manufacturing",
+        Footer_Retail_Ecommerce: "Retail & E-commerce",
+        Footer_Whitepapers: "Whitepapers",
+        Footer_Industry_Research: "Industry Research",
+        Footer_Best_Practices: "Best Practices",
+        Footer_About_Us: "About Us",
+        Footer_Careers: "Careers",
+        Footer_Partners: "Partners",
+        Footer_Privacy_Policy: "Privacy Policy",
+        Footer_Terms_Conditions: "Terms & Conditions",
+        Footer_Cookie_Settings: "Cookie Settings",
+        All_Rights_Reserved: "All Rights Reserved",
+        Copyright: "© 2024 Hyper Scale Insights. All Rights Reserved.",
+        
+        // SEO Meta Content
+        SEO_Title: "Hyper Scale Insights - Business Intelligence, Data Analytics & Digital Transformation Solutions",
+        SEO_Description: "Leading business intelligence and data analytics company providing digital transformation, market research, business consulting, data visualization, predictive analytics, and strategic insights for enterprises worldwide.",
+        SEO_Keywords: "business intelligence, data analytics, digital transformation, market research, business consulting, data visualization, predictive analytics, strategic insights, enterprise solutions, business strategy, data science, machine learning, artificial intelligence, business automation, process optimization, performance analytics, competitive analysis, market intelligence, business growth, scalable solutions, cloud analytics, big data, dashboard development, reporting solutions, KPI tracking, business metrics, data-driven decisions, consulting services, technology solutions, innovation consulting, digital strategy",
+        
+        // Enhanced Service Descriptions with Keywords
+        Service_BI_Extended: "Transform your business with advanced business intelligence solutions including data warehousing, ETL processes, real-time analytics, predictive modeling, machine learning algorithms, statistical analysis, data mining, business reporting, dashboard development, KPI tracking, performance metrics, competitive intelligence, market analysis, customer analytics, financial analytics, operational analytics, and strategic planning tools.",
+        
+        Service_Digital_Extended: "Comprehensive digital transformation services covering cloud migration, legacy system modernization, API development, microservices architecture, DevOps implementation, agile methodologies, digital strategy consulting, technology roadmapping, change management, user experience optimization, mobile app development, web application development, e-commerce solutions, CRM implementation, ERP integration, and automation solutions.",
+        
+        Service_Consulting_Extended: "Strategic business consulting services including market research, competitive analysis, business process optimization, organizational development, performance improvement, growth strategy, innovation management, risk assessment, compliance consulting, financial planning, operational efficiency, supply chain optimization, customer experience enhancement, brand strategy, marketing analytics, and executive coaching.",
+        
+        // Industry-Specific Keywords
+        Industries_Served: "technology companies, financial services, healthcare organizations, manufacturing, e-commerce, retail, telecommunications, energy, automotive, aerospace, pharmaceuticals, biotechnology, education, government, non-profit organizations, startups, SMEs, enterprise corporations",
+        
+        Technology_Stack: "Python, R, SQL, Tableau, Power BI, Qlik, SAS, SPSS, Apache Spark, Hadoop, AWS, Azure, Google Cloud, Snowflake, Databricks, TensorFlow, PyTorch, Kubernetes, Docker, Jenkins, Git, Jira, Confluence, Salesforce, SAP, Oracle, Microsoft 365, SharePoint",
+        
+        // Location-Based SEO
+        Locations_Served: "Sweden, Stockholm, Gothenburg, Malmö, Uppsala, Nordic countries, Europe, Middle East, North Africa, Saudi Arabia, UAE, Qatar, Kuwait, Turkey, Germany, UK, France, Netherlands, Denmark, Norway, Finland",
+        
+        // Service Benefits Keywords
+        Benefits_Keywords: "increased ROI, improved efficiency, cost reduction, revenue growth, competitive advantage, market leadership, innovation acceleration, risk mitigation, compliance assurance, scalability, flexibility, automation, optimization, transformation, modernization, digitalization, data-driven insights, strategic planning, performance improvement, customer satisfaction, employee productivity, operational excellence, business agility, future-ready solutions"
+    },
+    
+    SE: {
         Home: "Hem",
         Services: "Tjänster",
         Team: "Team",
         Contact: "Kontakt",
         Learn_More: "Lär dig mer",
-        Header_Title_1: "Omfattande tjänster för offentliga relationer",
-        Header_Title_3: "Utöka din räckvidd",
-        Header_Paragraph: "Vi erbjuder en mångsidig rad tjänster inom offentliga relationer, inklusive medierelationer, myndighetsrelationer, innehållsskapande och offentliga angelägenheter. Vårt team av experter är dedikerade till att hjälpa dig att växa din verksamhet och etablera ett positivt rykte genom att utveckla effektiva PR-strategier anpassade till dina unika mål och behov.",
-        Core_serverss: "Kärntjänster",
-        Core_Paragraph: "Vi erbjuder ett brett utbud av tjänster för att hjälpa dig att uppnå dina mål. Vårt team av experter är dedikerade till att hjälpa dig att växa din verksamhet och etablera ett positivt rykte genom att utveckla effektiva PR-strategier anpassade till dina unika mål och behov.",
-        Meet_members: "Träffa våra talangfulla och engagerade teammedlemmar.",
-        FAQs: "FAQs",
-        FAQs_Paragraph: "Svar på några av de vanligaste frågorna om våra tjänster.",
-        Talke_to_Use: "Prata med oss",
-        // Contact
         contact_now: "Kontakta oss nu",
-
-        // teamNames
+        Select_Language: "Välj språk",
+        
+        // Hero Section
+        Hero_Badge: "Ladda upp ditt företag",
+        Hero_Title_1: "Ladda upp ditt företag",
+        Hero_Title_2: ", med vår",
+        Hero_Title_3: "allt-i-ett",
+        Hero_Title_4: "digitala tjänsteplattform.",
+        Hero_Description: "Kämpar du med att hålla koll på ditt företag? Hantera projekt, kunder, digital transformation; att driva ditt företag behöver inte vara svårt. Med Hyper Scale Insights kan du automatisera processer, accelerera tillväxt och transformera verksamheten – allt från expert digital konsultation.",
+        Start_Free_Consultation: "Starta gratis konsultation",
+        Watch_Demo: "Titta på demo",
+        Free_Consultation: "Gratis konsultation",
+        No_Commitment: "Inget åtagande krävs",
+        Expert_Guidance: "Expert vägledning",
+        Successful_Projects: "Framgångsrika projekt",
+        Client_Satisfaction: "Kundnöjdhet",
+        Expert_Support: "Expert support",
+        
+        // Services Section
+        Services_Title: "Föreställ dig vad du kan göra med en kraftfull tjänsteportfölj.",
+        Services_Description: "Det är dags att säga adjö till ineffektiva processer, ändlösa manuella uppgifter och affärsflaskhalsar. Byggd som en komplett digital lösning som är snabb, pålitlig och skalbar.",
+        All_Business_Needs: "Alla dina affärsbehov på ett ställe",
+        All_Business_Needs_Desc: "Varje projekt, varje kund och varje interaktion hanteras sömlöst, så du vet alltid din affärsstatus, vad som behöver uppmärksamhet och när du ska följa upp.",
+        Digital_Transformation: "Digital transformation som levererar",
+        Digital_Transformation_Desc: "Du behöver inte kämpa med föråldrade processer längre. Vi automatiserar arbetsflöden, optimerar verksamhet och implementerar banbrytande lösningar med beprövade metoder.",
+        Technology_Implementation: "Teknikimplementering som 'bara fungerar'",
+        Technology_Implementation_Desc: "I det ögonblick du engagerar våra tjänster implementerar vi robusta tekniklösningar, integrerar system och hanterar driftsättningar med kraftfulla ramverk - så allt fungerar smidigt.",
+        Business_Intelligence: "Business intelligence som driver beslut",
+        Business_Intelligence_Desc: "Förvandla din data till handlingsbara insikter. Våra analyslösningar ger realtidsdashboards, prediktiv modellering och strategiska rekommendationer för tillväxt.",
+        Cybersecurity: "Cybersäkerhet som skyddar din framtid",
+        Cybersecurity_Desc: "Skydda dina digitala tillgångar med omfattande säkerhetsstrategier. Vi bedömer risker, implementerar skyddsåtgärder och säkerställer efterlevnad av branschstandarder.",
+        Strategic_Consulting: "Strategisk konsultation som speglar din vision",
+        Strategic_Consulting_Desc: "Ditt företag bör spegla dina unika mål och värderingar. Med personlig konsultation hjälper vi dig utveckla strategier, optimera processer och uppnå hållbar tillväxt.",
+        And_List_Goes_On: "Och listan fortsätter…",
+        Explore_All_Services: "Utforska alla tjänster",
+        Services_CTA_Description: "Vi har inte rört vid ytan av vad vi kan göra, och vi är bara på väg att börja. Bästa saken om alla våra tjänster - allt fungerar tillsammans, så du behöver inte bry dig om det.",
+        Explore_Client_Management: "Utforska kundhantering",
+        Explore_Transformation_Services: "Utforska transformationstjänster",
+        Discover_Implementation_Services: "Upptäck implementeringstjänster",
+        Explore_Analytics_Solutions: "Utforska analyslösningar",
+        Discover_Security_Solutions: "Upptäck säkerhetslösningar",
+        Explore_Strategic_Consulting: "Utforska strategisk konsultation",
+        
+        // Team Section
+        Join_Leaders: "Gå med branschledare:",
+        Why_Different: "Hyper Scale Insights är inte bara ett annat konsultföretag",
+        Why_Description: "; det är en komplett affärstransformationspartner för digital och strategisk tillväxt.",
+        Why_Extended_Description: "Instead of dealing with multiple consultants, run everything from a fast, scalable, and customizable approach. What do you need more?",
+        Happy_Clients: "Nöjda Kunder",
+        Industry_Experts: "Branschexperter",
+        Meet_Our_Team: "Träffa Vårt Expertteam",
+        Team_Description: "Våra dedikerade professionella medarbetare bidrar med års erfarenhet och expertis för att hjälpa till att transformera ditt företag.",
+        
+        // Testimonials
+        Sarah_Johnson: "Sarah Johnson",
+        Sarah_Role: "VD, TechFlow Solutions",
+        Sarah_Text: "Hyper Scale Insights transformerade våra affärsverksamheter helt. Deras strategiska konsultation och digitala transformationstjänster ökade vår effektivitet med 200% och hjälpte oss att skala snabbt.",
+        Michael_Chen: "Michael Chen",
+        Michael_Role: "Grundare, CloudHost Pro",
+        Michael_Text: "Business intelligence-lösningarna de implementerade gav oss insikter vi aldrig haft tidigare. Vårt beslutsfattande är nu datadrivet och vår ROI har ökat med 300%.",
+        Emily_Rodriguez: "Emily Rodriguez",
+        Emily_Role: "Verksamhetschef, WebCraft",
+        Emily_Text: "Deras cybersäkerhetskonsultation och implementeringstjänster skyddade vårt företag från potentiella hot. Teamets expertis och pågående support har varit ovärderlig.",
+        
+        // Real Team Members
         Nabil: "Nabil",
         Sarah: "Sarah",
-        Farhan: "Farhan",
         Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
         Haidar: "Haidar",
         Hamed: "Hamed",
-
-        //Roles
         Public_Relations_Manager: "PR-chef",
-        Events_Coordinator: "Arrangemangsansvarig",
-        Exporter: "Exportör",
+        Events_Coordinator: "Eventkoordinator",
         Developer: "Utvecklare",
-        Communications_Specialist: "Kommunikationschef",
-        Public_Relations_Internee: "PR-praktikant",
         Lawyer: "Advokat",
         Local_Representative_in_turkey: "Lokal representant i Turkiet",
 
-        //     // Services
-
-        Feature1_Heading: "Reseservice",
-        Feature1_Text:
-            "Reseservice är tjänster som erbjuds till personer som reser eller tar semester. Dessa tjänster inkluderar transport, boende och fritid.",
-        Feature2_Heading: "Offentliga angelägenheter",
-        Feature2_Text: "Hantering av informationsflödet mellan en person eller organisation och allmänheten.",
-        Feature3_Heading: "Myndighetsrelationer",
-        Feature3_Text: "Hantering av hur ett företag, en organisation eller en person interagerar med myndigheter och myndigheter.",
-        Feature4_Heading: "Offentliga relationer",
-        Feature4_Text: "Hantering av informationsflödet mellan en person eller organisation och allmänheten.",
-        Feature5_Heading: "Medierelationer",
-        Feature5_Text: "Hantering av informationsflödet mellan en person eller organisation och media.",
-
-        Feature6_Heading: "Affärs- och investeringsrelationer",
-        Feature6_Text: "Hantering av hur ett företag, en organisation eller en person interagerar med handlare och företag och etablerar affärsrelationer.",
-
-    },
-
-    SO: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
-        Home: "Hoose",
-        Services: "Adeegyada",
-        Team: "Koox",
-        Contact: "Xiriir",
-        Learn_More: "Baro Wixii Faahfaahin Ah",
-        Header_Title_1: "Adeegyada Xiriirka Dadweynaha ee Guud",
-        Header_Title_3: "Kordhinta Hal-abuurkaaga",
-        Header_Paragraph: "Waxaan bixinaa noocyo kala duwan oo adeegyo xiriirka dadweynaha ah, oo ay ku jiraan xiriirka warbaahinta, xiriirka dowladaha, abuurista muuqaalka, iyo arrimaha bulshada. Kooxdayada xirfadlayaal ayaa u dhabarka u ah inay ku caawiso kor u qaadida ganacsigaaga iyo sameynta sumcad wanaagsan iyada oo loo adeegsanayo hababka PR ee ku habboon ujeedadahaaga gaarka ah iyo baahiyahaaga.",
-        Core_serverss: "Adeegyada Asaasiga ah",
-        Core_Paragraph: "Waxaan bixinaa adeegyo kala duwan oo idinka caawin doona inaad gaarto ujeedadahaaga. Kooxdayada xirfadlayaal ayaa u dhabarka u ah inay ku caawiso kor u qaadida ganacsigaaga iyo sameynta sumcad wanaagsan iyada oo loo adeegsanayo hababka PR ee ku habboon ujeedadahaaga gaarka ah iyo baahiyahaaga.",
-        Meet_members: "Kulanka xubnaha kooxdeena heerka koowaad iyo kuwa daacad ah.",
-        FAQs: "FAQs",
-        FAQs_Paragraph: "Jawaabaha su'aalaha badanaa la is weydiiyo ee ku saabsan adeegyadeena.",
-        Talke_to_Use: "Ku xiriir",
-        // Contact
-        contact_now: "Nala soo xiriir hadda",
-
-        // teamNames
-        Nabil: "Nabil",
-        Sarah: "Sarah",
-        Farhan: "Farhan",
-        Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
-        Haidar: "Haidar",
-        Hamed: "Hamed",
-        //Roles
-        Public_Relations_Manager: "Mudaneeyaha Xiriirka Dadweynaha",
-        Events_Coordinator: "Xiriiriyaha Dhacdooyinka",
-        Exporter: "dhoofiye",
-        Developer: "Horumariye",
-        Communications_Specialist: "Khabiirka Isgaadhsiinta",
-        Public_Relations_Internee: "Xiriirka Dadweynaha Intern",
-        Lawyer: "Garyaqaan",
-        Local_Representative_in_turkey: "Xiriirka Dadweynaha ee Dalka ee Turkiyada",
-        //     // Services
-
-        Feature1_Heading: "Adeegyada socdaalka iyo dalxiiska",
-        Feature1_Text: "Adeegyada safarka iyo dalxiiska waa adeegyo la siiyo dadka safraya ama fasaxa ku jira. Adeegyadan waxaa ka mid ah gaadiidka, hoyga, iyo madadaalada.",
-        Feature2_Heading: "Arimaha Bulshada",
-        Feature2_Text: "Maaraynta socodka xogta ee u dhaxaysa shakhsi ama urur iyo dadweynaha",
-        Feature3_Heading: "Xiriirka Dowladda",
-        Feature3_Text: "Maaraynta sida shirkad, urur, ama shakhsi ula falgalaan saraakiisha dawladda iyo wakaaladaha",
-        Feature4_Heading: "Xiriirka Dadweynaha",
-        Feature4_Text: "Xiriirka dadweynaha waxaad ka heli kartaa inay ku jiraan ugu dambeeyay, ugu dambeeyay, iyo dhaqanka.",
-        Feature5_Heading: "Xiriirka Dadweynaha",
-        Feature5_Text: "Maaraynta socodka xogta ee u dhaxaysa shakhsi ama urur iyo dadweynaha",
-        Feature6_Heading: "Xiriirka Dowladda",
-        Feature6_Text: "Maaraynta sida shirkad, urur, ama shakhsi ula falgalaan saraakiisha dawladda iyo wakaaladaha",
-
-    },
-
-    IR: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
-        Home: "خانه",
-        Services: "خدمات",
-        Team: "تیم",
-        Contact: "تماس",
-        Learn_More: "بیشتر بدانید",
-        Header_Title_1: "خدمات عمومی روابط گسترده",
-        Header_Title_3: "گسترش دامنه خود را",
-        Header_Paragraph: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Core_serverss: "خدمات هسته ای",
-        Core_Paragraph: "ما یک مجموعه گسترده از خدمات را برای کمک به شما در رسیدن به هدف های خود ارائه می دهیم. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Meet_members: "با متخصصان و متمرکزان ما آشنا شوید.",
-        FAQs: "سوالات متداول",
-        FAQs_Paragraph: "پاسخ به برخی از سوالات متداول درباره خدمات ما.",
-        Talke_to_Use: "با ما تماس بگیرید",
-        // Contact
-        contact_now: "همین حالا تماس بگیرید",
-
-        // teamNames
-        Nabil: "نبیل",
-        Sarah: "سارا",
-        Farhan: "فرهان",
-        Mohammed: "محمد",
-        Akram: "اکرم",
-        Fuaad: "فؤاد",
-        Haidar: "حیدر",
-        Hamed: "حامد",
-
-        //Roles
-        Public_Relations_Manager: "مدیر روابط عمومی",
-        Events_Coordinator: "تنظیم کننده رویدادها",
-        Exporter: "صادر کننده",
-        Developer: "توسعه دهنده",
-        Communications_Specialist: "کارشناس ارتباطات",
-        Public_Relations_Internee: "روابط عمومی داوطلب",
-        Lawyer: "قانونگر",
-        Local_Representative_in_turkey: "نماینده محلی در ترکیه",
-
-        //     // Services
-
-        Feature1_Heading: "سفر",
-        Feature1_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Feature2_Heading: "محتوا",
-        Feature2_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Feature3_Heading: "روابط عمومی",
-        Feature3_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Feature4_Heading: "مسائل عمومی",
-        Feature4_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Feature5_Heading: "روابط سازمانی",
-        Feature5_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-        Feature6_Heading: "روابط رسانه ای",
-        Feature6_Text: "ما ارائه یک مجموعه گسترده از خدمات در حوزه عمومی روابط، شامل روابط رسانه ای، روابط سازمانی، ایجاد محتوا و مسائل عمومی. تیم ما از کارشناسان متخصص است که به شما کمک می کند تا کسب و کار خود را توسعه دهید و با توسعه استراتژی های PR مفید برای هدف های و نیازهای منحصر به فرد خود را ایجاد کنید.",
-
-
-    },
-
-    TR: {
-        Hlkt: "Hlkt",
-        Wsl: "Wsl",
-        Home: "Anasayfa",
-        Services: "Hizmetler",
-        Team: "Takım",
-        Contact: "İletişim",
-        Learn_More: "Daha Fazla Bilgi",
-        Header_Title_1: "Kapsamlı Halkla İlişkiler Hizmetleri",
-        Header_Title_3: "Kapsamanızı Genişletin",
-        Header_Paragraph: "Medya ilişkileri, hükümet ilişkileri, içerik oluşturma ve kamu işleri dahil olmak üzere çeşitli halkla ilişkiler hizmetleri sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        Core_serverss: "Temel Hizmetler",
-        Core_Paragraph: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        Meet_members: "Yetenekli ve özverili ekip üyelerimizle tanışın.",
-        FAQs: "SSS",
-        FAQs_Paragraph: "Hizmetlerimiz hakkında en sık sorulan soruların bazılarına yanıtlar.",
-        Talke_to_Use: 'Bize Ulaşın',
-        // Contact
-        contact_now: "Şimdi İletişime Geçin",
-
-        // teamNames
-        Nabil: "Nabil",
-        Sarah: "Sarah",
-        Farhan: "Farhan",
-        Mohammed: "Mohammed",
-        Akram: "Akram",
-        Fuaad: "Fuaad",
-        Haidar: "Haidar",
-        Hamed: "Hamed",
-        //Roles
-        Public_Relations_Manager: "Halkla İlişkiler Müdürü",
-        Events_Coordinator: 'Etkinlik Koordinatörü',
-        Exporter: "İhracatçı",
-        Developer: "Geliştirici",
-        Communications_Specialist: "İletişim Uzmanı",
-        Public_Relations_Internee: "Halkla İlişkiler Stajyeri",
-        Lawyer: "Avukat",
-        Local_Representative_in_turkey: "Türkiye'de yerel temsilci",
-
-
-        //     // Services
-
-        //     // Feature1
-        Feature1_Heading: "Medya İlişkileri",
-        Feature1_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        //     // Feature2
-        Feature2_Heading: "Hükümet İlişkileri",
-        Feature2_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        //     // Feature3
-        Feature3_Heading: "İçerik Oluşturma",
-        Feature3_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        //     // Feature4
-        Feature4_Heading: "Kamu İşleri",
-        Feature4_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        //     // Feature5
-        Feature5_Heading: "Seyahat Hizmetleri",
-        Feature5_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-        //     // Feature6
-        Feature6_Heading: "Sosyal Medya Yönetimi",
-        Feature6_Text: "Hedeflerinizi gerçekleştirmenize yardımcı olacak geniş bir hizmet yelpazesi sunuyoruz. Ekibimiz, işinizi büyütmenize ve benzersiz hedeflerinize ve ihtiyaçlarınıza göre şekillendirilmiş etkili PR stratejileri geliştirerek olumlu bir itibar oluşturmanıza yardımcı olmaya adamıştır.",
-
+        // FAQ Section
+        FAQs: "FAQ",
+        FAQs_Description: "Svar på några av de vanligaste frågorna om våra tjänster.",
+        Your_Questions_Answered: "Dina frågor, besvarade",
+        FAQ_Q1: "Vilka typer av digitala tjänster erbjuder ni?",
+        FAQ_A1: "Vi tillhandahåller omfattande digitala tjänster inklusive business intelligence & analys, digital transformationskonsultation, teknikimplementering, strategisk affärskonsultation, cybersäkerhetslösningar och utveckling av innovationsstrategi.",
+        FAQ_Q2: "Hur närmar ni er digitala transformationsprojekt?",
+        FAQ_A2: "Vår digitala transformationsmetod är skräddarsydd för varje kund. Vi börjar med en omfattande bedömning, utvecklar en strategisk färdplan, implementerar lösningar i faser och ger pågående support för att säkerställa framgångsrik adoption och ROI.",
+        FAQ_Q3: "Vilka branscher specialiserar ni er på?",
+        FAQ_A3: "Vi arbetar inom olika branscher inklusive teknikföretag, finansiella tjänster, vårdorganisationer, tillverkning och detaljhandel & e-handel. Vår expertis låter oss anpassa våra lösningar till branschspecifika behov.",
+        FAQ_Q4: "Hur lång tid tar ett typiskt konsultuppdrag?",
+        FAQ_A4: "Projekttidslinjer varierar baserat på omfattning och komplexitet. Strategiska konsultprojekt sträcker sig vanligtvis från 3-6 månader, medan teknikimplementeringar kan ta 6-18 månader. Vi tillhandahåller detaljerade tidslinjer under vår första konsultation.",
+        FAQ_Q5: "Tillhandahåller ni pågående support efter projektavslut?",
+        FAQ_A5: "Ja! Vi erbjuder omfattande support efter implementering inklusive utbildning, underhåll, optimering och strategisk vägledning för att säkerställa långsiktig framgång och kontinuerlig förbättring av dina digitala initiativ.",
+        FAQ_Q6: "Hur mäter ni framgången för era konsulttjänster?",
+        FAQ_A6: "Vi etablerar tydliga KPI:er och framgångsmått vid projektstart, inklusive ROI-förbättringar, effektivitetsvinster, kostnadsreduceringar och affärstillväxtindikatorer. Regelbunden rapportering säkerställer transparens och ansvarsskyldighet.",
+        FAQ_Q7: "Kan ni arbeta med vår befintliga tekniska infrastruktur?",
+        FAQ_A7: "Absolut! Vi specialiserar oss på att integrera nya lösningar med befintliga system. Vårt team genomför grundliga bedömningar för att säkerställa sömlös integration samtidigt som vi maximerar dina nuvarande teknikinvesteringar.",
+        FAQ_Q8: "Hur kommer vi igång med era tjänster?",
+        FAQ_A8: "Att komma igång är enkelt! Boka en gratis konsultation där vi diskuterar dina utmaningar, mål och krav. Vi kommer sedan att tillhandahålla ett anpassat förslag som beskriver vår rekommenderade metod och tidslinje.",
+        Need_Expert_Guidance: "Behöver expertvägledning?",
+        Expert_Guidance_Text: "Vårt konsultteam är redo att hjälpa dig navigera din digitala transformationsresa. Boka en gratis konsultation för att diskutera dina specifika behov.",
+        Schedule_Consultation: "Boka Konsultation",
+        Helpful_Resources: "Hjälpsamma Resurser",
+        Case_Studies: "Fallstudier",
+        Industry_Whitepapers: "Branschrapporter",
+        Blog_Insights: "Blogg & Insikter",
+        Expert_Webinars: "Expertwebbinarier",
+        Talk_to_Us: "Prata med oss",
+        
+        // Footer
+        Ready_Transform: "Redo att transformera ditt företag?",
+        Expert_Digital_Services: "Expertdigitala tjänster är en",
+        Game_Changer: "spelförändring",
+        For_Modern_Businesses: "för moderna företag",
+        Experience_Power: "Upplev kraften i strategisk konsultation och digital transformation. Boka en gratis konsultation för att upptäcka hur vi kan accelerera din tillväxt och framgång.",
+        Schedule_Free_Consultation: "Boka gratis konsultation",
+        Transform_Business: "Transformera ditt företag",
+        Accelerate_Growth: ", accelerera din tillväxt",
+        Free_Consultation_Available: ". Gratis konsultation tillgänglig.",
+        Brand_Description: "Stärker företag genom expertdigitala tjänster och strategisk konsultation. Vi hjälper organisationer att transformera, skala och lyckas i det digitala landskapet.",
+        
+        // Footer Links
+        Industries: "Branscher",
+        Resources: "Resurser",
+        Company: "Företag",
+        Footer_Business_Intelligence: "Business Intelligence",
+        Footer_Digital_Transformation: "Digital Transformation",
+        Footer_Technology_Implementation: "Teknikimplementering",
+        Footer_Strategic_Consulting: "Strategisk Konsultation",
+        Footer_Cybersecurity_Solutions: "Cybersäkerhetslösningar",
+        Footer_Innovation_Strategy: "Innovationsstrategi",
+        Footer_Data_Analytics: "Dataanalys",
+        Footer_Technology_Companies: "Teknikföretag",
+        Footer_Financial_Services: "Finansiella Tjänster",
+        Footer_Healthcare_Organizations: "Vårdorganisationer",
+        Footer_Manufacturing: "Tillverkning",
+        Footer_Retail_Ecommerce: "Detaljhandel & E-handel",
+        Footer_Whitepapers: "Vitböcker",
+        Footer_Industry_Research: "Branschforskning",
+        Footer_Best_Practices: "Bästa Praxis",
+        Footer_About_Us: "Om Oss",
+        Footer_Careers: "Karriärer",
+        Footer_Partners: "Partners",
+        Footer_Privacy_Policy: "Integritetspolicy",
+        Footer_Terms_Conditions: "Villkor",
+        Footer_Cookie_Settings: "Cookie-inställningar",
+        All_Rights_Reserved: "Alla Rättigheter Förbehållna",
+        Copyright: "© 2024 Hyper Scale Insights. Alla Rättigheter Förbehållna.",
+        
+        // SEO Meta Content
+        SEO_Title: "Hyper Scale Insights - Business Intelligence, Data Analytics & Digital Transformation Solutions",
+        SEO_Description: "Leading business intelligence and data analytics company providing digital transformation, market research, business consulting, data visualization, predictive analytics, and strategic insights for enterprises worldwide.",
+        SEO_Keywords: "business intelligence, data analytics, digital transformation, market research, business consulting, data visualization, predictive analytics, strategic insights, enterprise solutions, business strategy, data science, machine learning, artificial intelligence, business automation, process optimization, performance analytics, competitive analysis, market intelligence, business growth, scalable solutions, cloud analytics, big data, dashboard development, reporting solutions, KPI tracking, business metrics, data-driven decisions, consulting services, technology solutions, innovation consulting, digital strategy",
+        
+        // Enhanced Service Descriptions with Keywords
+        Service_BI_Extended: "Transform your business with advanced business intelligence solutions including data warehousing, ETL processes, real-time analytics, predictive modeling, machine learning algorithms, statistical analysis, data mining, business reporting, dashboard development, KPI tracking, performance metrics, competitive intelligence, market analysis, customer analytics, financial analytics, operational analytics, and strategic planning tools.",
+        
+        Service_Digital_Extended: "Comprehensive digital transformation services covering cloud migration, legacy system modernization, API development, microservices architecture, DevOps implementation, agile methodologies, digital strategy consulting, technology roadmapping, change management, user experience optimization, mobile app development, web application development, e-commerce solutions, CRM implementation, ERP integration, and automation solutions.",
+        
+        Service_Consulting_Extended: "Strategic business consulting services including market research, competitive analysis, business process optimization, organizational development, performance improvement, growth strategy, innovation management, risk assessment, compliance consulting, financial planning, operational efficiency, supply chain optimization, customer experience enhancement, brand strategy, marketing analytics, and executive coaching.",
+        
+        // Industry-Specific Keywords
+        Industries_Served: "technology companies, financial services, healthcare organizations, manufacturing, e-commerce, retail, telecommunications, energy, automotive, aerospace, pharmaceuticals, biotechnology, education, government, non-profit organizations, startups, SMEs, enterprise corporations",
+        
+        Technology_Stack: "Python, R, SQL, Tableau, Power BI, Qlik, SAS, SPSS, Apache Spark, Hadoop, AWS, Azure, Google Cloud, Snowflake, Databricks, TensorFlow, PyTorch, Kubernetes, Docker, Jenkins, Git, Jira, Confluence, Salesforce, SAP, Oracle, Microsoft 365, SharePoint",
+        
+        // Location-Based SEO
+        Locations_Served: "Sweden, Stockholm, Gothenburg, Malmö, Uppsala, Nordic countries, Europe, Middle East, North Africa, Saudi Arabia, UAE, Qatar, Kuwait, Turkey, Germany, UK, France, Netherlands, Denmark, Norway, Finland",
+        
+        // Service Benefits Keywords
+        Benefits_Keywords: "increased ROI, improved efficiency, cost reduction, revenue growth, competitive advantage, market leadership, innovation acceleration, risk mitigation, compliance assurance, scalability, flexibility, automation, optimization, transformation, modernization, digitalization, data-driven insights, strategic planning, performance improvement, customer satisfaction, employee productivity, operational excellence, business agility, future-ready solutions"
     }
-
-
-}
+}; 

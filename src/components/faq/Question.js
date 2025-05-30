@@ -14,7 +14,7 @@ const Question = React.memo(({ title, answer }) => {
     };
 
     const handleWhatsAppClick = () => {
-        window.location.href = "https://api.whatsapp.com/send?phone=46762702580";
+        window.open("https://api.whatsapp.com/send?phone=46762702580", '_blank', 'noopener,noreferrer');
     };
 
 
@@ -39,8 +39,7 @@ const Question = React.memo(({ title, answer }) => {
                                 <FaWhatsapp />
                             </div>
                             <div className="icon-text">
-                                <span className="icon-text">{translations[selectedLanguage].Talke_to_Use}</span>
-
+                                <span className="icon-text">{translations[selectedLanguage]?.Talk_to_Us || "Talk to Us"}</span>
                             </div>
                         </div>
                     </div>

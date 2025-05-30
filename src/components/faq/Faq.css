@@ -97,15 +97,14 @@
 }
 
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  display: none;
   background: var(--accent-bg);
+  padding: 1rem 2.5rem 2rem 2.5rem;
 }
 
+.faq-answer.show,
 .faq-item.active .faq-answer {
-  max-height: 200px;
-  padding: 0 2.5rem 2rem 2.5rem;
+  display: block !important;
 }
 
 .faq-answer p {
@@ -253,7 +252,8 @@
   }
   
   .faq-item.active .faq-answer {
-    padding: 0 2rem 1.5rem 2rem;
+    max-height: 600px; /* Increased for mobile */
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
   }
   
   .support-card,
@@ -278,7 +278,8 @@
   }
   
   .faq-item.active .faq-answer {
-    padding: 0 1.5rem 1.2rem 1.5rem;
+    max-height: 500px; /* Increased for small mobile */
+    padding: 1rem 1.5rem 1.2rem 1.5rem;
   }
   
   .faq-answer p {

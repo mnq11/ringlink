@@ -1,39 +1,33 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import "./Contact.css";
 // import { TiSocialGooglePlus } from "react-icons/ti";
 import {FaFacebookF, FaTwitter, FaInstagram, FaTelegram, FaWhatsapp} from "react-icons/fa";
 
-import AOS from "aos";
 import "aos/dist/aos.css";
 import {LanguageContext} from "../../language/LanguageContext";
 import {translations} from "../../language/translations";
 
 const handleWhatsAppClick = () => {
-    window.location.href = "https://api.whatsapp.com/send?phone=46762702580";
+    window.open("https://api.whatsapp.com/send?phone=46762702580", '_blank', 'noopener,noreferrer');
 };
 
-
 function handleTelegramClick() {
-    window.location.href = "https://t.me/+46762702580";}
+    window.open("https://t.me/+46762702580", '_blank', 'noopener,noreferrer');
+}
 
 function handleFacebookClick() {
-    window.location.href = "https://www.facebook.com/profile.php?id=100091332034987";
+    window.open("https://www.facebook.com/profile.php?id=100091332034987", '_blank', 'noopener,noreferrer');
 }
 
 function handleTwitterClick() {
-    window.location.href = "https://twitter.com/MohammedlNabil";
+    window.open("https://twitter.com/MohammedlNabil", '_blank', 'noopener,noreferrer');
 }
 
 function handleInstagramClick() {
-    window.location.href = "https://www.instagram.com/halketwassl/";
+    window.open("https://www.instagram.com/halketwassl/", '_blank', 'noopener,noreferrer');
 }
 
 const Contact = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
     const {selectedLanguage} = useContext(LanguageContext);
 
     return (

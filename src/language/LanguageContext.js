@@ -26,7 +26,7 @@ export const LanguageProvider = ({ children }) => {
     useEffect(() => {
         localStorage.setItem('selectedLanguage', selectedLanguage);
         // Set document direction for RTL languages
-        document.documentElement.dir = selectedLanguage === 'AR' ? 'rtl' : 'ltr';
+        document.documentElement.dir = (selectedLanguage === 'AR') ? 'rtl' : 'ltr';
         document.documentElement.lang = selectedLanguage.toLowerCase();
     }, [selectedLanguage]);
 
@@ -34,10 +34,7 @@ export const LanguageProvider = ({ children }) => {
     const languageConfig = {
         AR: { name: "العربية", flag: "SA", dir: "rtl" },
         EN: { name: "English", flag: "GB", dir: "ltr" },
-        SE: { name: "Svenska", flag: "SE", dir: "ltr" },
-        SO: { name: "Soomaali", flag: "SO", dir: "ltr" },
-        TR: { name: "Türkçe", flag: "TR", dir: "ltr" },
-        IR: { name: "فارسی", flag: "IR", dir: "rtl" },
+        SE: { name: "Svenska", flag: "SE", dir: "ltr" }
     };
 
     const value = {
@@ -45,7 +42,7 @@ export const LanguageProvider = ({ children }) => {
         setSelectedLanguage,
         languageConfig,
         currentLanguage: languageConfig[selectedLanguage],
-        isRTL: selectedLanguage === 'AR' || selectedLanguage === 'IR'
+        isRTL: selectedLanguage === 'AR'
     };
 
     // Provide the selected language and its setter to child components

@@ -202,6 +202,39 @@
   letter-spacing: 0.05em;
 }
 
+.language-flag {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
+  font-variant-emoji: emoji;
+  text-rendering: auto;
+}
+
+.language-dropdown select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", system-ui, sans-serif;
+}
+
+.language-dropdown select:hover {
+  border-color: var(--border-hover);
+  background: var(--accent-bg);
+}
+
+.language-dropdown select option {
+  padding: 0.8rem;
+  background: var(--card-bg);
+  color: var(--primary-text);
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", system-ui, sans-serif;
+}
+
 .language-dropdown {
   position: absolute;
   top: calc(100% + 1rem);
@@ -344,6 +377,26 @@
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   box-shadow: var(--shadow-sm);
+}
+
+.mobile-language-selector select {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--card-bg);
+  color: var(--primary-text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", system-ui, sans-serif;
+}
+
+.mobile-language-selector select option {
+  padding: 0.8rem;
+  background: var(--card-bg);
+  color: var(--primary-text);
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", system-ui, sans-serif;
 }
 
 /* Overlays */

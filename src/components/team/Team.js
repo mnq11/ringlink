@@ -1,47 +1,43 @@
-import React, { useEffect } from "react";
+import React, { useContext, useMemo } from "react";
 import "./Team.css";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiStar } from "react-icons/hi";
 import { BsQuote } from "react-icons/bs";
+import { LanguageContext } from "../../language/LanguageContext";
+import { translations } from "../../language/translations";
+import { teamMembers } from "./teamMembers";
+import TeamMember from "./TeamMember";
 
 const Team = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-
+  const { selectedLanguage } = useContext(LanguageContext);
+  
   // Customer testimonials for digital services and business consultancy
-  const testimonials = [
+  const testimonials = useMemo(() => [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechFlow Solutions",
-      company: "TechFlow",
+      name: translations[selectedLanguage]?.Sarah_Johnson || "Sarah Johnson",
+      role: translations[selectedLanguage]?.Sarah_Role || "CEO, TechFlow Solutions",
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Hyper Scale Insights transformed our business operations completely. Their strategic consulting and digital transformation services increased our efficiency by 200% and helped us scale rapidly.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+      text: translations[selectedLanguage]?.Sarah_Text || "Hyper Scale Insights transformed our business operations completely. Their strategic consulting and digital transformation services increased our efficiency by 200% and helped us scale rapidly.",
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Founder, CloudHost Pro",
-      company: "CloudHost",
+      name: translations[selectedLanguage]?.Michael_Chen || "Michael Chen",
+      role: translations[selectedLanguage]?.Michael_Role || "Founder, CloudHost Pro",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "The business intelligence solutions they implemented gave us insights we never had before. Our decision-making is now data-driven and our ROI has increased by 300%.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      text: translations[selectedLanguage]?.Michael_Text || "The business intelligence solutions they implemented gave us insights we never had before. Our decision-making is now data-driven and our ROI has increased by 300%.",
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Operations Manager, WebCraft",
-      company: "WebCraft",
+      name: translations[selectedLanguage]?.Emily_Rodriguez || "Emily Rodriguez",
+      role: translations[selectedLanguage]?.Emily_Role || "Operations Manager, WebCraft",
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Their cybersecurity consulting and implementation services protected our business from potential threats. The team's expertise and ongoing support have been invaluable.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      text: translations[selectedLanguage]?.Emily_Text || "Their cybersecurity consulting and implementation services protected our business from potential threats. The team's expertise and ongoing support have been invaluable.",
     }
-  ];
+  ], [selectedLanguage]);
 
   // Industry partners and clients
   const partners = [
@@ -58,10 +54,10 @@ const Team = () => {
       <div className="container">
         {/* Partners Section */}
         <div className="partners-section" data-aos="fade-up">
-          <p className="partners-label">Join top industry leaders:</p>
+          <p className="partners-label">{translations[selectedLanguage]?.Join_Leaders || "Join top industry leaders:"}</p>
           <div className="partners-grid">
             {partners.map((partner, index) => (
-              <div key={index} className="partner-item" data-aos="fade-up" data-aos-delay={index * 100}>
+              <div key={partner.name} className="partner-item" data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="partner-logo">{partner.logo}</div>
                 <span className="partner-name">{partner.name}</span>
               </div>
@@ -73,13 +69,9 @@ const Team = () => {
         <div className="social-proof-content">
           <div className="content-left" data-aos="fade-right">
             <h2>
-              <span className="title-highlight">Hyper Scale Insights isn't just another consulting firm</span>; 
-              it's a complete business transformation partner for digital and strategic growth. 
-              Instead of juggling multiple consultants, manage everything from a 
-              <span className="text-gradient"> fast</span>, 
-              <span className="text-gradient"> scalable</span> & 
-              <span className="text-gradient"> readily customizable</span> approach. 
-              What more do you need?
+              <span className="title-highlight">{translations[selectedLanguage]?.Why_Different || "Hyper Scale Insights isn't just another consulting firm"}</span>
+              {translations[selectedLanguage]?.Why_Description || "; it's a complete business transformation partner for digital and strategic growth."} 
+              {translations[selectedLanguage]?.Why_Extended_Description || "Instead of dealing with multiple consultants, run everything from a fast, scalable, and customizable approach. What do you need more?"}
             </h2>
           </div>
           
@@ -93,7 +85,7 @@ const Team = () => {
                     </div>
                     <div className="rating">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <HiStar key={i} size={14} />
+                        <HiStar key={`star-${testimonial.id}-${i}`} size={14} />
                       ))}
                     </div>
                   </div>
@@ -119,24 +111,43 @@ const Team = () => {
           </div>
         </div>
 
+        {/* Real Team Members Section */}
+        <div className="team-members-section" data-aos="fade-up" data-aos-delay="300">
+          <div className="section-header">
+            <h3>{translations[selectedLanguage]?.Meet_Our_Team || "Meet Our Expert Team"}</h3>
+            <p>{translations[selectedLanguage]?.Team_Description || "Our dedicated professionals bring years of experience and expertise to help transform your business."}</p>
+          </div>
+          <div className="team-members-grid">
+            {teamMembers.map((member, index) => (
+              <div key={member.id} data-aos="fade-up" data-aos-delay={index * 100}>
+                <TeamMember 
+                  imageUrl={member.imageUrl}
+                  name={member.name}
+                  role={member.role}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Stats Section */}
         <div className="stats-section" data-aos="fade-up" data-aos-delay="400">
           <div className="stats-grid">
             <div className="stat-item">
               <div className="stat-number">500+</div>
-              <div className="stat-label">Successful Projects</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Successful_Projects || "Successful Projects"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">150+</div>
-              <div className="stat-label">Happy Clients</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Happy_Clients || "Happy Clients"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">24/7</div>
-              <div className="stat-label">Expert Support</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Expert_Support || "Expert Support"}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">50+</div>
-              <div className="stat-label">Industry Experts</div>
+              <div className="stat-label">{translations[selectedLanguage]?.Industry_Experts || "Industry Experts"}</div>
             </div>
           </div>
         </div>

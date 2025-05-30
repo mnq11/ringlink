@@ -14,8 +14,8 @@ const Serves = ({ icon, headingKey, textKey }) => {
       </div>
 
         <div className="feature-text">
-            <h3>{translations[selectedLanguage][headingKey]}</h3>
-            <p className="u-text-small">{translations[selectedLanguage][textKey]}</p>
+            <h3>{translations[selectedLanguage]?.[headingKey] || headingKey}</h3>
+            <p className="u-text-small">{translations[selectedLanguage]?.[textKey] || textKey}</p>
       </div>
     </div>
   );

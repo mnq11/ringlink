@@ -4,40 +4,149 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="theme-color" content="#1a365d" />
+    
+    <!-- Cache Control for Development -->
+    <meta http-equiv="Cache-Control" content="public, max-age=3600, must-revalidate" />
+    <meta http-equiv="Pragma" content="public" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Hyper Scale Insights - Business Intelligence, Data Analytics & Digital Transformation Solutions</title>
+    <meta name="title" content="Hyper Scale Insights - Business Intelligence, Data Analytics & Digital Transformation Solutions" />
+    <meta name="description" content="Leading business intelligence and data analytics company providing digital transformation, market research, business consulting, data visualization, predictive analytics, and strategic insights for enterprises worldwide." />
+    <meta name="keywords" content="business intelligence, data analytics, digital transformation, market research, business consulting, data visualization, predictive analytics, strategic insights, enterprise solutions, business strategy, data science, machine learning, artificial intelligence, business automation, process optimization, performance analytics, competitive analysis, market intelligence, business growth, scalable solutions, cloud analytics, big data, dashboard development, reporting solutions, KPI tracking, business metrics, data-driven decisions, consulting services, technology solutions, innovation consulting, digital strategy" />
+    <meta name="author" content="Hyper Scale Insights" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="language" content="English, Arabic, Swedish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hyperscaleinsights.com/" />
+    <meta property="og:title" content="Hyper Scale Insights - Business Intelligence & Data Analytics Solutions" />
+    <meta property="og:description" content="Transform your business with our cutting-edge data analytics, business intelligence, and digital transformation solutions. Expert consulting for enterprise growth and optimization." />
+    <meta property="og:image" content="%PUBLIC_URL%/hyper-scale-full-logo.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Hyper Scale Insights" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hyperscaleinsights.com/" />
+    <meta property="twitter:title" content="Hyper Scale Insights - Business Intelligence & Data Analytics Solutions" />
+    <meta property="twitter:description" content="Transform your business with our cutting-edge data analytics, business intelligence, and digital transformation solutions. Expert consulting for enterprise growth and optimization." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/hyper-scale-full-logo.jpeg" />
+    <meta property="twitter:creator" content="@HyperScaleInsights" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="SE" />
+    <meta name="geo.placename" content="Sweden" />
+    <meta name="geo.position" content="59.3293;18.0686" />
+    <meta name="ICBM" content="59.3293, 18.0686" />
+    
+    <!-- Structured Data for Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hyper Scale Insights",
+      "url": "https://hyperscaleinsights.com",
+      "logo": "https://hyperscaleinsights.com/hyper-scale-full-logo.jpeg",
+      "description": "Leading business intelligence and data analytics company providing digital transformation solutions",
+      "sameAs": [
+        "https://linkedin.com/company/hyperscaleinsights",
+        "https://twitter.com/hyperscaleinsights"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+46-762-702-580",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Arabic", "Swedish"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SE",
+        "addressLocality": "Stockholm"
+      },
+      "foundingDate": "2024",
+      "numberOfEmployees": "5-10",
+      "industry": "Business Intelligence and Analytics"
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Business Intelligence and Data Analytics Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Hyper Scale Insights"
+      },
+      "serviceType": "Business Intelligence, Data Analytics, Digital Transformation",
+      "description": "Comprehensive business intelligence and data analytics solutions including market research, predictive analytics, and digital transformation consulting",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business Intelligence Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Data Analytics and Visualization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Business Intelligence Consulting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Transformation Strategy"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Hlkat Wsl</title>
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hyperscaleinsights.com/" />
+    
+    <!-- Alternate language versions -->
+    <link rel="alternate" hreflang="en" href="https://hyperscaleinsights.com/en" />
+    <link rel="alternate" hreflang="ar" href="https://hyperscaleinsights.com/ar" />
+    <link rel="alternate" hreflang="sv" href="https://hyperscaleinsights.com/sv" />
+    <link rel="alternate" hreflang="x-default" href="https://hyperscaleinsights.com/" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+        <h1>Hyper Scale Insights - Business Intelligence & Data Analytics</h1>
+        <p>You need to enable JavaScript to run this app. We provide cutting-edge business intelligence, data analytics, and digital transformation solutions for enterprises worldwide.</p>
+        <p><strong>Services:</strong> Business Intelligence, Data Analytics, Digital Transformation, Strategic Consulting, Cybersecurity Solutions, Technology Implementation</p>
+        <p><strong>Contact:</strong> +46-762-702-580 | Available in English, Arabic, and Swedish</p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

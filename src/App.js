@@ -7,7 +7,6 @@ import {
     Navbar,
     Header,
     Services,
-    Team,
     Contact,
     Faq,
     Footer,
@@ -34,7 +33,6 @@ function App() {
                 <Header />
             </header>
             <Services data-aos="fade-up" />
-            <Team />
             <Contact />
             <Faq />
             <Footer />

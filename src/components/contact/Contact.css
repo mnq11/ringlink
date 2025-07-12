@@ -108,7 +108,7 @@ form button {
 
 .contact-section {
   background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-secondary) 100%);
-  padding: 120px 0;
+  padding: 60px 0 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -239,11 +239,9 @@ form button {
 }
 
 .status-message {
-  padding: 16px 20px;
-  border-radius: 12px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 16px;
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 1rem;
 }
 
 .status-message.success {
@@ -368,5 +366,126 @@ form button {
   
   .contact-info-item {
     padding: 16px;
+  }
+}
+
+/* --- Enhanced Contact Us Now Section Styles --- */
+
+.enhanced-contact-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.big-title {
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+.highlight-subtitle {
+  font-size: 1.3rem;
+  color: #bfc9e0;
+  margin-bottom: 0;
+}
+
+.subtitle-emphasis {
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.modern-form-card {
+  background: rgba(255,255,255,0.07);
+  border: 1.5px solid rgba(120,119,198,0.13);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+  border-radius: 20px;
+  padding: 28px 16px 20px 16px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.improved-form .form-group {
+  margin-bottom: 10px;
+}
+
+.improved-form input,
+.improved-form textarea {
+  background: rgba(255,255,255,0.13);
+  border: 1.5px solid #bfc9e0;
+  color: #1a223f;
+  font-size: 1.08rem;
+  border-radius: 10px;
+  padding: 14px 18px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.improved-form input:focus,
+.improved-form textarea:focus {
+  border: 1.5px solid #667eea;
+  box-shadow: 0 0 0 2px #667eea33;
+  background: #fff;
+  color: #222;
+}
+
+.improved-form input::placeholder,
+.improved-form textarea::placeholder {
+  color: #bfc9e0;
+  opacity: 1;
+}
+
+.improved-form input[type="tel"] {
+  letter-spacing: 1px;
+}
+
+.enhanced-btn {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 14px 0;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(102,126,234,0.13);
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.enhanced-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(102,126,234,0.18);
+}
+
+@media (max-width: 600px) {
+  .modern-form-card {
+    padding: 16px 2px 10px 2px;
+    max-width: 100%;
+  }
+  .big-title {
+    font-size: 2.1rem;
+  }
+  .form-title {
+    font-size: 1.3rem;
+  }
+  .container {
+    padding: 0 2px;
+  }
+  .section-header.enhanced-contact-header {
+    margin-bottom: 18px;
   }
 }

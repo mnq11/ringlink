@@ -1,10 +1,8 @@
 import React, { useContext, useState, useRef } from "react";
 import "./Contact.css";
-import { FaFacebookF, FaTwitter, FaInstagram, FaTelegram, FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import "aos/dist/aos.css";
 import { LanguageContext } from "../../language/LanguageContext";
-import { translations } from "../../language/translations";
 
 const handleWhatsAppClick = () => {
     window.open("https://api.whatsapp.com/send?phone=12818245300", '_blank', 'noopener,noreferrer');
@@ -57,11 +55,11 @@ const Contact = () => {
 
             // Template parameters
             const templateParams = {
-                from_name: formData.name,
-                from_email: formData.email,
-                subject: formData.subject,
+                name: formData.name,
+                email: formData.email,
+                title: formData.subject,
                 message: formData.message,
-                to_email: 'team@hyperscaleinsights.com'
+                phone: formData.phone
             };
 
             // Send email using environment variables
@@ -87,19 +85,20 @@ const Contact = () => {
         <section id="contact" className="contact-section">
             <div className="container">
                 <div className="contact-content" data-aos="fade-up">
-                    <div className="section-header">
-                        <h2 className="gradient-text">{translations[selectedLanguage]?.contact_now || "Get In Touch"}</h2>
-                        <p className="section-subtitle">
-                            {translations[selectedLanguage]?.contact_description || "Ready to transform your business? Let's discuss your project and explore how we can help you achieve your goals."}
+                    <div className="section-header enhanced-contact-header">
+                        <h2 className="gradient-text big-title">Contact Us Now</h2>
+                        <p className="section-subtitle highlight-subtitle">
+                            Ready to transform your business? <br />
+                            <span className="subtitle-emphasis">Let's discuss your project and explore how we can help you achieve your goals.</span>
                         </p>
                     </div>
 
                     <div className="contact-grid">
                         {/* Contact Form */}
                         <div className="contact-form-wrapper" data-aos="fade-right">
-                            <div className="contact-form-card">
-                                <h3>Send us a message</h3>
-                                <form ref={form} onSubmit={handleSubmit} className="contact-form">
+                            <div className="contact-form-card modern-form-card">
+                                <h3 className="form-title">Send us a message</h3>
+                                <form ref={form} onSubmit={handleSubmit} className="contact-form improved-form">
                                     <div className="form-group">
                                         <input
                                             type="text"
@@ -117,6 +116,17 @@ const Contact = () => {
                                             value={formData.email}
                                             onChange={handleInputChange}
                                             placeholder="Your Email *"
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone || ''}
+                                            onChange={handleInputChange}
+                                            placeholder="Your Phone Number *"
+                                            pattern="[+0-9\s()-]{7,}"
                                             required
                                         />
                                     </div>
@@ -140,78 +150,24 @@ const Contact = () => {
                                             required
                                         ></textarea>
                                     </div>
-                                    
                                     {submitStatus === 'success' && (
                                         <div className="status-message success">
                                             ✅ Message sent successfully! We'll get back to you soon.
                                         </div>
                                     )}
-                                    
                                     {submitStatus === 'error' && (
                                         <div className="status-message error">
                                             ❌ Failed to send message. Please try again or contact us directly.
                                         </div>
                                     )}
-                                    
-                                    <button 
-                                        type="submit" 
-                                        className="submit-btn"
+                                    <button
+                                        type="submit"
+                                        className="submit-btn enhanced-btn"
                                         disabled={isSubmitting}
                                     >
                                         {isSubmitting ? 'Sending...' : 'Send Message'}
                                     </button>
                                 </form>
-                            </div>
-                        </div>
-
-                        {/* Contact Info */}
-                        <div className="contact-info-wrapper" data-aos="fade-left">
-                            <div className="contact-info-card">
-                                <h3>Contact Information</h3>
-                                <div className="contact-info-list">
-                                    <div className="contact-info-item">
-                                        <FaEnvelope className="contact-icon" />
-                                        <div>
-                                            <h4>Email</h4>
-                                            <p>team@hyperscaleinsights.com</p>
-                                        </div>
-                                    </div>
-                                    <div className="contact-info-item">
-                                        <FaPhone className="contact-icon" />
-                                        <div>
-                                            <h4>Phone</h4>
-                                            <p>+1 (281) 824-5300</p>
-                                        </div>
-                                    </div>
-                                    <div className="contact-info-item">
-                                        <FaMapMarkerAlt className="contact-icon" />
-                                        <div>
-                                            <h4>Location</h4>
-                                            <p>Mesa, Arizona 85212</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="social-section">
-                                    <h4>Follow Us</h4>
-                                    <div className="social-icons">
-                                        <div className="social-icon" onClick={handleWhatsAppClick} title="WhatsApp">
-                                            <FaWhatsapp />
-                                        </div>
-                                        <div className="social-icon" onClick={handleTelegramClick} title="Telegram">
-                                            <FaTelegram />
-                                        </div>
-                                        <div className="social-icon" onClick={handleFacebookClick} title="Facebook">
-                                            <FaFacebookF />
-                                        </div>
-                                        <div className="social-icon" onClick={handleTwitterClick} title="Twitter">
-                                            <FaTwitter />
-                                        </div>
-                                        <div className="social-icon" onClick={handleInstagramClick} title="Instagram">
-                                            <FaInstagram />
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

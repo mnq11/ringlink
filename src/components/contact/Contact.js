@@ -52,8 +52,8 @@ const Contact = () => {
         setSubmitStatus(null);
 
         try {
-            // Initialize EmailJS with your public key
-            emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this
+            // Initialize EmailJS with your public key from environment variable
+            emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
 
             // Template parameters
             const templateParams = {
@@ -64,12 +64,12 @@ const Contact = () => {
                 to_email: 'team@hyperscaleinsights.com'
             };
 
-            // Send email
+            // Send email using environment variables
             const result = await emailjs.send(
-                'YOUR_SERVICE_ID',    // You'll need to replace this
-                'YOUR_TEMPLATE_ID',   // You'll need to replace this
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                 templateParams,
-                'YOUR_PUBLIC_KEY'     // You'll need to replace this
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
             );
 
             console.log('Email sent successfully:', result);

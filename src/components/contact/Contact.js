@@ -1,11 +1,13 @@
-import React, {useState, useRef } from "react";
+import React, {useState, useRef, useContext } from "react";
 import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import "aos/dist/aos.css";
-
+import { LanguageContext } from "../../language/LanguageContext";
+import { translations } from "../../language/translations";
 
 
 const Contact = () => {
+    const { selectedLanguage } = useContext(LanguageContext);
     const form = useRef();
     const [formData, setFormData] = useState({
         name: '',
@@ -66,10 +68,10 @@ const Contact = () => {
             <div className="container">
                 <div className="contact-content" data-aos="fade-up">
                     <div className="section-header enhanced-contact-header">
-                        <h2 className="gradient-text big-title">Contact Us Now</h2>
+                        <h2 className="gradient-text big-title">{translations[selectedLanguage]?.contact_now || translations['EN'].contact_now}</h2>
                         <p className="section-subtitle highlight-subtitle">
-                            Ready to transform your business? <br />
-                            <span className="subtitle-emphasis">Let's discuss your project and explore how we can help you achieve your goals.</span>
+                            {translations[selectedLanguage]?.Contact_Section_Lead || translations['EN'].Contact_Section_Lead} <br />
+                            <span className="subtitle-emphasis">{translations[selectedLanguage]?.Contact_Section_Desc || translations['EN'].Contact_Section_Desc}</span>
                         </p>
                     </div>
 
@@ -77,7 +79,7 @@ const Contact = () => {
                         {/* Contact Form */}
                         <div className="contact-form-wrapper" data-aos="fade-right">
                             <div className="contact-form-card modern-form-card">
-                                <h3 className="form-title">Send us a message</h3>
+                                <h3 className="form-title">{translations[selectedLanguage]?.Contact_Form_Title || translations['EN'].Contact_Form_Title}</h3>
                                 <form ref={form} onSubmit={handleSubmit} className="contact-form improved-form">
                                     <div className="form-group">
                                         <input
@@ -85,7 +87,7 @@ const Contact = () => {
                                             name="name"
                                             value={formData.name}
                                             onChange={handleInputChange}
-                                            placeholder="Your Name *"
+                                            placeholder={translations[selectedLanguage]?.Contact_Form_Name || translations['EN'].Contact_Form_Name}
                                             required
                                         />
                                     </div>
@@ -95,7 +97,7 @@ const Contact = () => {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            placeholder="Your Email *"
+                                            placeholder={translations[selectedLanguage]?.Contact_Form_Email || translations['EN'].Contact_Form_Email}
                                             required
                                         />
                                     </div>
@@ -105,7 +107,7 @@ const Contact = () => {
                                             name="phone"
                                             value={formData.phone || ''}
                                             onChange={handleInputChange}
-                                            placeholder="Your Phone Number *"
+                                            placeholder={translations[selectedLanguage]?.Contact_Form_Phone || translations['EN'].Contact_Form_Phone}
                                             pattern="[+0-9\s()-]{7,}"
                                             required
                                         />
@@ -116,7 +118,7 @@ const Contact = () => {
                                             name="subject"
                                             value={formData.subject}
                                             onChange={handleInputChange}
-                                            placeholder="Subject *"
+                                            placeholder={translations[selectedLanguage]?.Contact_Form_Subject || translations['EN'].Contact_Form_Subject}
                                             required
                                         />
                                     </div>
@@ -125,19 +127,19 @@ const Contact = () => {
                                             name="message"
                                             value={formData.message}
                                             onChange={handleInputChange}
-                                            placeholder="Your Message *"
+                                            placeholder={translations[selectedLanguage]?.Contact_Form_Message || translations['EN'].Contact_Form_Message}
                                             rows="6"
                                             required
                                         ></textarea>
                                     </div>
                                     {submitStatus === 'success' && (
                                         <div className="status-message success">
-                                            ✅ Message sent successfully! We'll get back to you soon.
+                                            {translations[selectedLanguage]?.Contact_Form_Success || translations['EN'].Contact_Form_Success}
                                         </div>
                                     )}
                                     {submitStatus === 'error' && (
                                         <div className="status-message error">
-                                            ❌ Failed to send message. Please try again or contact us directly.
+                                            {translations[selectedLanguage]?.Contact_Form_Error || translations['EN'].Contact_Form_Error}
                                         </div>
                                     )}
                                     <button
@@ -145,7 +147,7 @@ const Contact = () => {
                                         className="submit-btn enhanced-btn"
                                         disabled={isSubmitting}
                                     >
-                                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                                        {isSubmitting ? (translations[selectedLanguage]?.Contact_Form_Sending || translations['EN'].Contact_Form_Sending) : (translations[selectedLanguage]?.Contact_Form_Send || translations['EN'].Contact_Form_Send)}
                                     </button>
                                 </form>
                             </div>

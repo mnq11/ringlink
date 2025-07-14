@@ -1,13 +1,11 @@
-import React, { useContext, useState, useRef } from "react";
+import React, {useState, useRef } from "react";
 import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import "aos/dist/aos.css";
-import { LanguageContext } from "../../language/LanguageContext";
 
 
 
 const Contact = () => {
-    const { selectedLanguage } = useContext(LanguageContext);
     const form = useRef();
     const [formData, setFormData] = useState({
         name: '',

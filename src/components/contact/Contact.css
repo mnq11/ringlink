@@ -111,6 +111,8 @@ form button {
   padding: 60px 0 60px 0;
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .contact-section::before {
@@ -152,11 +154,13 @@ form button {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
+  padding: 0;
 }
 
 .contact-form-card,
@@ -402,13 +406,12 @@ form button {
 }
 
 .modern-form-card {
-  background: rgba(255,255,255,0.07);
-  border: 1.5px solid rgba(120,119,198,0.13);
-  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
-  border-radius: 20px;
-  padding: 28px 16px 20px 16px;
-  max-width: 420px;
-  margin: 0 auto;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  padding: 32px 16px 24px 16px;
+  box-shadow: none;
 }
 
 .form-title {
@@ -487,5 +490,47 @@ form button {
   }
   .section-header.enhanced-contact-header {
     margin-bottom: 18px;
+  }
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact-form-wrapper {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.modern-form-card {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  padding: 32px 16px 24px 16px;
+  box-shadow: none;
+}
+
+/* Remove unused styles for info card and social icons */
+.contact-info-card, .info-title, .contact-info-list, .contact-info-item, .contact-icon, .social-section, .social-icon {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .contact-form-wrapper, .modern-form-card {
+    max-width: none;
+    padding: 0 0 0 0;
   }
 }

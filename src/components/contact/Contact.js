@@ -4,25 +4,7 @@ import emailjs from '@emailjs/browser';
 import "aos/dist/aos.css";
 import { LanguageContext } from "../../language/LanguageContext";
 
-const handleWhatsAppClick = () => {
-    window.open("https://api.whatsapp.com/send?phone=12818245300", '_blank', 'noopener,noreferrer');
-};
 
-function handleTelegramClick() {
-    window.open("https://t.me/+12818245300", '_blank', 'noopener,noreferrer');
-}
-
-function handleFacebookClick() {
-    window.open("https://www.facebook.com/profile.php?id=100091332034987", '_blank', 'noopener,noreferrer');
-}
-
-function handleTwitterClick() {
-    window.open("https://twitter.com/MohammedlNabil", '_blank', 'noopener,noreferrer');
-}
-
-function handleInstagramClick() {
-    window.open("https://www.instagram.com/halketwassl/", '_blank', 'noopener,noreferrer');
-}
 
 const Contact = () => {
     const { selectedLanguage } = useContext(LanguageContext);

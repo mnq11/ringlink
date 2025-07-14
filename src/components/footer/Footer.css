@@ -194,10 +194,10 @@
   margin-bottom: 1rem;
 }
 
-.footer-column a,
+.footer-links a,
 .footer-link {
   font-size: 1.4rem;
-  color: var(--secondary-text);
+  color: var(--secondary-text, #222);
   text-decoration: none;
   transition: all 0.2s ease;
   display: block;
@@ -210,7 +210,7 @@
   width: 100%;
 }
 
-.footer-column a:hover,
+.footer-links a:hover,
 .footer-link:hover {
   color: var(--primary-text);
   transform: translateX(5px);

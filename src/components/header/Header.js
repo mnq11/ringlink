@@ -39,9 +39,6 @@ const Header = () => {
               <span>{translations[selectedLanguage]?.Start_Free_Consultation || "Start free consultation"}</span>
               <BsArrowRight size={18} />
             </button>
-            <button className="btn btn-secondary btn-lg">
-              <span>{translations[selectedLanguage]?.Watch_Demo || "Watch demo"}</span>
-            </button>
           </div>
           
           <div className="hero-features" data-aos="fade-up" data-aos-delay="400">
@@ -77,54 +74,9 @@ const Header = () => {
           </div>
         </div>
         
-        <div className="hero-visual" data-aos="fade-left" data-aos-delay="600">
-          <div className="visual-container">
-            <div className="visual-glow"></div>
-            <div className="floating-cards">
-              <div className="floating-card card-1">
-                <div className="card-icon">📊</div>
-                <div className="card-text">
-                  <div className="card-amount">$2,350</div>
-                  <div className="card-label">Revenue increase</div>
-                </div>
-              </div>
-              <div className="floating-card card-2">
-                <div className="card-icon">📈</div>
-                <div className="card-text">
-                  <div className="card-amount">+300%</div>
-                  <div className="card-label">ROI Growth</div>
-                </div>
-              </div>
-              <div className="floating-card card-3">
-                <div className="card-icon">⚡</div>
-                <div className="card-text">
-                  <div className="card-amount">95%</div>
-                  <div className="card-label">Success Rate</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Remove the floating cards and activity feed sections */}
       </div>
       
-      {/* Live activity feed like Upmind */}
-      <div className="activity-feed" data-aos="fade-up" data-aos-delay="700">
-        <div className="activity-item">
-          <span className="client-name">Sarah J.</span> completed
-          <span className="activity-highlight">Digital Transformation</span>
-          <span className="activity-value">$15,000</span>
-        </div>
-        <div className="activity-item">
-          <span className="client-name">Michael C.</span> started
-          <span className="activity-highlight">Business Intelligence</span>
-          <span className="activity-value">$8,500</span>
-        </div>
-        <div className="activity-item">
-          <span className="client-name">Emily R.</span> upgraded
-          <span className="activity-highlight">Strategic Consulting</span>
-          <span className="activity-value">$12,000</span>
-        </div>
-      </div>
     </section>
   );
 };

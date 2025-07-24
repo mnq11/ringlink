@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { BsArrowRight, BsFacebook, BsTwitter, BsInstagram, BsTelegram } from 'react-icons/bs';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { BsArrowRight } from 'react-icons/bs';
 import { HiSparkles } from 'react-icons/hi';
+import { FaWhatsapp } from 'react-icons/fa';
 import { LanguageContext } from '../../language/LanguageContext';
 import { translations } from '../../language/translations';
 import './Footer.css';
@@ -98,25 +98,13 @@ const Footer = () => {
                             <p className="brand-description">
                                 {translations[selectedLanguage]?.Brand_Description || "Empowering businesses through expert digital services and strategic consulting. We help organizations transform, scale, and succeed in the digital landscape."}
                             </p>
-                            <div className="social-links">
-                                <a href="https://www.facebook.com/profile.php?id=100091332034987" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                    <BsFacebook />
+                            <div className="whatsapp-contact-pro" style={{display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '2rem'}}>
+                                <a href="https://wa.me/905319136011" target="_blank" rel="noopener noreferrer" className="whatsapp-link-pro" aria-label="WhatsApp" style={{display: 'flex', alignItems: 'center', textDecoration: 'none', fontWeight: 600, fontSize: '1.3rem'}}>
+                                    <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--success-color)', borderRadius: '50%', width: '2.7rem', height: '2.7rem', marginRight: '0.7rem'}}>
+                                        <FaWhatsapp size={22} color="#fff" />
+                                    </span>
+                                    <span style={{color: 'var(--primary-text)'}}>+90 531 913 60 11</span>
                                 </a>
-                                <a href="https://www.twitter.com/Hlkatwsl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                    <BsTwitter />
-                                </a>
-                                <a href="https://www.instagram.com/halketwassl/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                    <BsInstagram />
-                                </a>
-                                <a href="https://t.me/+46762702580" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                                    <BsTelegram />
-                                </a>
-                                <button onClick={() => handleNavigation('linkedin')} className="social-link-btn" aria-label="LinkedIn">
-                                    <FaLinkedin size={18} />
-                                </button>
-                                <button onClick={() => handleNavigation('github')} className="social-link-btn" aria-label="GitHub">
-                                    <FaGithub size={18} />
-                                </button>
                             </div>
                         </div>
 

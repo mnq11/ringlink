@@ -79,6 +79,11 @@
   margin-right: 2rem;
 }
 
+[dir="rtl"] .question-text {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
 .question-icon {
   display: flex;
   align-items: center;
@@ -244,6 +249,10 @@
   .question-text {
     font-size: 1.5rem;
     margin-right: 1rem;
+  }
+  
+  [dir="rtl"] .question-text {
+    margin-left: 1rem;
   }
   
   .question-icon {

@@ -11,7 +11,7 @@
   font-size: 4rem;
   line-height: 1.4;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--primary-text);
   position: relative;
   padding-bottom: 2rem;
   text-align: center;
@@ -38,12 +38,12 @@ h1 span:nth-child(3) {
   bottom: 0;
   width: 65%;
   height: 1px;
-  background: var(--color-white);
+  background: var(--primary-text);
 }
 
 .header-left p {
   margin: 3rem 0;
-  color: var(--color-white);
+  color: var(--primary-text);
   width: 70%;
 }
 

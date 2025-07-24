@@ -8,7 +8,7 @@
   font-weight: 300;
   line-height: 1.4;
   text-transform: uppercase;
-  color: var(--dark-text);
+  color: var(--primary-text);
   margin: 1.5rem 0;
 }
 
@@ -16,7 +16,7 @@
   width: 50%;
   min-width: 40rem;
   margin: 0 auto;
-  color: var(--dark-text);
+  color: var(--secondary-text);
 }
 
 .serverss-content {

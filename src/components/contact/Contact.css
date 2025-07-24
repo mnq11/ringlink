@@ -4,9 +4,9 @@
 
 section#contact {
   text-align: center;
-  color: #fff;
+  color: var(--primary-text);
   background-size: cover;
-  background-color: #0a1930;
+  background-color: var(--primary-bg);
 }
 
 .contact h2 {
@@ -27,9 +27,9 @@ form > * {
 form input {
   padding: 1rem;
   background: transparent;
-  border: 1px solid #777;
+  border: 1px solid var(--border-color);
   border-radius: 5px 0 0 5px;
-  color: #fff;
+  color: var(--primary-text);
   outline: none;
   width: 80%;
   font-size: 1.6rem;
@@ -37,8 +37,8 @@ form input {
 
 form button {
   padding: 1rem;
-  background: var(--form-button);
-  border: 1px solid var(--form-button);
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 0 5px 5px 0;
   color: #fff;
   font-size: 1.6rem;
@@ -56,7 +56,7 @@ form button {
 .social-icon {
   margin: 2rem;
   padding: 1rem;
-  border: 1px solid #fff;
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -80,7 +80,8 @@ form button {
 }
 
 .social-icon:hover {
-  background: var(--light-blue);
+  background: var(--accent-color);
+  color: #fff;
   transform: rotate(10deg);
   transition: transform 0.3s;
 }
